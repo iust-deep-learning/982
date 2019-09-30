@@ -4,8 +4,6 @@ title: Course Materials
 permalink: /course-materials/
 ---
 
-{% include image.html url="/_images/cover2.jpg" width=175 align="right" %}
-
 ## Book
 
 A part of this course is based on "Deep Learning with Python" by Francois Chollet.
