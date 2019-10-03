@@ -6,7 +6,7 @@ course_semester: "Fall 1398 (2019)"
 description: |
     Instructor: Mohammad Taher Pilehvar
 
-message: 
+message: Register to our Google <a href="https://groups.google.com/forum/#!forum/dl981/">groups page</a> to get course notifications via email.
 baseurl: "/981" # the subpath of your site, e.g. /blog/
 url: "https://iust-deep-learning.github.io/" # the base hostname & protocol for your site
 githubdir: "iust-deep-learning/iust-deep-learning.github.io"

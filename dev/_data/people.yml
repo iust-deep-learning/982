@@ -3,5 +3,13 @@ instructor:
   profile_pic: /_images/pp/inst.jpg
 
 teaching_assistants:
+  - name: Amirmohammad Kazemeinizade
+    profile_pic: /_images/pp/avatar.jpg
+
+  - name: Samin Fatehi
+    profile_pic: /_images/pp/avatar.jpg
+
+  - name: Amir Khakpour
+    profile_pic: /_images/pp/avatar.jpg
 
 
