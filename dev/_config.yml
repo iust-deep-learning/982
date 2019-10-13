@@ -40,6 +40,8 @@ collections:
         output: true
     assignments:
         output: true
+    practical:
+        output: true
     announcements:
         output: false
 

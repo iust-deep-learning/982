@@ -1,0 +1,18 @@
+<div>
+    {% if include.prac.notes %}
+    [<a title="Download notes (zip)" href="
+    {% if include.prac.notes contains '://' %}
+      {{ include.prac.notes }} 
+    {% else %}
+      {{ include.prac.notes | prepend: site.baseurl }} 
+    {% endif %}">notes</a>]
+    {% endif %}
+    {% if include.prac.codes %}
+    [<a title="Download codes (zip)" href="
+    {% if include.prac.codes contains '://' %}
+      {{ include.prac.codes }} 
+    {% else %}
+      {{ include.prac.codes | prepend: site.baseurl }} 
+    {% endif %}">codes</a>]
+    {% endif %}
+</div>
