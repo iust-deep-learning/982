@@ -1,4 +1,4 @@
-I"»<p>You can download the lectures here (in PDF format). I will try to upload lectures prior to their corresponding classes.</p>
+I"ô<p>You can download the lectures here (in PDF format). I will try to upload lectures prior to their corresponding classes.</p>
 
 <ul id="archive">
 
@@ -68,10 +68,12 @@
     ">notes</a>]
     
     
-    [<a title="Download codes (zip)" href="
+	
+    [<a title="colab file" href="
     
-      https://drive.google.com/file/d/1M_q51MHs1ingoEIUwIptOuU133hu4yGv/view?usp=sharing 
-    ">codes</a>]
+      https://colab.research.google.com/drive/1JRGkW36la93hyaMucSLStNIT1kEWB58J 
+    ">code</a>]
+	
     
 </div>
         </strong>
@@ -104,10 +106,22 @@
     ">slides</a>]
     
     
-    [<a title="Download codes (zip)" href="
+	
+    [<a title="colab file" href="
     
-      https://drive.google.com/file/d/1NE5BkRT-p7fDSMdfIaYmeMAR84Qp-glb/view?usp=sharing 
-    ">codes</a>]
+      https://colab.research.google.com/drive/1NBpidkDFWrUhTNdI1TBbbxyXssL75Jnk 
+    ">Predicting house prices</a>]
+	
+    [<a title="colab file" href="
+    
+      https://colab.research.google.com/drive/17lbQlcRsVJ9ieDxw2TDCuzbdRxim02VG 
+    ">Sentiment Analysis: IMDB movie reviews</a>]
+	
+    [<a title="colab file" href="
+    
+      https://colab.research.google.com/drive/1B0Eh_MREts7OYmvqDcd6h4tGjLAIXLn8 
+    ">Classifying Newswire</a>]
+	
     
 </div>
         </strong>

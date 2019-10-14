@@ -1,0 +1,69 @@
+I"ù<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
+
+<ul id="archive">
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/981/static_files/thumbnails/prac01.jpg');">
+        <img src="/981/static_files/thumbnails/prac01.jpg" />
+      </div>
+    </div>
+    
+    <div class="content">
+        <span><a href="#">Introduction to Colab and MLP</a></span><br />
+
+        <strong>tl;dr:</strong> 
+        <br />
+        <strong>
+        <div>
+    
+	
+    [<a href="
+    
+      https://drive.google.com/open?id=1B0E6TF_HkRLd9yLJn8JR-JRQW7WqpSm4 
+    ">note</a>]
+	
+    
+    
+	
+    [<a href="
+    
+      /981/static_files/colab_tutorial.ipynb 
+    ">introduction to colab</a>]
+	
+    
+</div>
+        </strong>
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="content">
+        <span><a href="#">Preprocessing</a></span><br />
+
+        <strong>tl;dr:</strong> 
+        <br />
+        <strong>
+        <div>
+    
+    
+	
+    [<a href="
+    
+      https://colab.research.google.com/drive/1x0SL_0xwLXl_a-dD8YazX4P_qeW--Xo3 
+    ">colab file</a>]
+	
+    
+</div>
+        </strong>
+    </div>
+</div>
+</li>
+
+</ul>
+:ET

@@ -14,11 +14,13 @@
     {% endif %}">notes</a>]
     {% endif %}
     {% if include.lecture.codes %}
-    [<a title="Download codes (zip)" href="
-    {% if include.lecture.codes contains '://' %}
-      {{ include.lecture.codes }} 
+	{% for code in include.lecture.codes %}
+    [<a title= "{{ code.title }}" href="
+    {% if code.link contains '://' %}
+      {{ code.link }} 
     {% else %}
-      {{ include.lecture.codes | prepend: site.baseurl }} 
-    {% endif %}">codes</a>]
+      {{ code.link | prepend: site.baseurl }} 
+    {% endif %}">{{ code.name }}</a>]
+	{% endfor %}
     {% endif %}
 </div>
