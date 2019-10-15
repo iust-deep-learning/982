@@ -2,7 +2,7 @@
 type: lecture
 date: 2019-10-13T8:00:00+4:30
 title: Getting Started with Neural Networks
-slides: https://drive.google.com/file/d/1on6uZo18EinYgCSu8k9KJ_jsWJx-I2Zg/view?usp=sharing
+slides: https://drive.google.com/open?id=1FjDqRAkQIvpnJemk8WQhXWeHDK8plTUP
 codes: 
 - link: https://colab.research.google.com/drive/1NBpidkDFWrUhTNdI1TBbbxyXssL75Jnk
   name: Predicting house prices

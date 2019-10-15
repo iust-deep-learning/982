@@ -8,6 +8,6 @@ notes:
 codes: 
 - link: /static_files/colab_tutorial.ipynb
   name: introduction to colab
-tldr: 
+tldr: "What is colab? How MLP works? and mathematics of backpropagation mechanism"
 thumbnail: /static_files/thumbnails/prac01.jpg
 ---
