@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>assignment_01 (2)</title>
+<title>assignment_01</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12996,8 +12996,10 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .mh { color: #666666 } /* Literal.Number.Hex */
 .highlight .mi { color: #666666 } /* Literal.Number.Integer */
 .highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sa { color: #BA2121 } /* Literal.String.Affix */
 .highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
 .highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .dl { color: #BA2121 } /* Literal.String.Delimiter */
 .highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
 .highlight .s2 { color: #BA2121 } /* Literal.String.Double */
 .highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
@@ -13008,49 +13010,12 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .s1 { color: #BA2121 } /* Literal.String.Single */
 .highlight .ss { color: #19177C } /* Literal.String.Symbol */
 .highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0000FF } /* Name.Function.Magic */
 .highlight .vc { color: #19177C } /* Name.Variable.Class */
 .highlight .vg { color: #19177C } /* Name.Variable.Global */
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
-    </style>
-<style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
     </style>
 
 
@@ -13112,7 +13077,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Assignment-#1---Deep-Learning-Fundamentals">Assignment #1 - Deep Learning Fundamentals<a class="anchor-link" href="#Assignment-#1---Deep-Learning-Fundamentals">&#182;</a></h1><p>Deep Learning / Spring 1398, Iran University of Science and Technology</p>
+<h1 id="Assignment-#1">Assignment #1<a class="anchor-link" href="#Assignment-#1">&#182;</a></h1><p>Deep Learning / Fall 1398, Iran University of Science and Technology</p>
 <hr>
 
 </div>
@@ -13124,7 +13089,7 @@ div#notebook {
 <p><strong>Please pay attention to these notes:</strong></p>
 <p><br/></p>
 <ul>
-<li><strong>Assignment Due: </strong> 1397/12/24 23:59:00</li>
+<li><strong>Assignment Due: </strong> 1398/08/22 23:59</li>
 <li>If you need any additional information, please review the assignment page on the course website.</li>
 <li>The items you need to answer are highlighted in red and the coding parts you need to implement are denoted by:
 <pre><code>########################################
@@ -13136,12 +13101,12 @@ div#notebook {
 <li>Finding any sort of copying will zero down that assignment grade and also will be counted as two negative assignment for your final score.</li>
 <li>When you are ready to submit, please follow the instructions at the end of this notebook.</li>
 <li>If you have any questions about this assignment, feel free to drop us a line. You may also post your questions on the course Forum page.</li>
-<li>You must run this notebook on Google Colab platform, it depends on Google Colab VM for some of the depencecies.</li>
+<li>You must run this notebook on Google Colab platform, it depends on Google Colab VM for some of its depencecies.</li>
 <li><strong>Before starting to work on the assignment Please fill your name in the next section <em>AND Remember to RUN the cell.</em> </strong></li>
 </ul>
 <p><br/></p>
-<p>Assignment Page: <a href="https://iust-deep-learning.github.io/972/assignments/01_deep_learning_fundamentals">https://iust-deep-learning.github.io/972/assignments/01_deep_learning_fundamentals</a></p>
-<p>Course Forum: <a href="https://groups.google.com/forum/#!forum/dl972/">https://groups.google.com/forum/#!forum/dl972/</a></p>
+<p>Assignment Page: <a href="https://iust-deep-learning.github.io/981/assignments/01_mlp_and_preprocessing">https://iust-deep-learning.github.io/981/assignments/01_mlp_and_preprocessing</a></p>
+<p>Course Forum: <a href="https://groups.google.com/forum/#!forum/dl981/">https://groups.google.com/forum/#!forum/dl981/</a></p>
 
 </div>
 </div>
@@ -13190,7 +13155,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Classifying-Persian-Handwritten-Digits">Classifying Persian Handwritten Digits<a class="anchor-link" href="#Classifying-Persian-Handwritten-Digits">&#182;</a></h1><hr>
+<h1 id="1.-MLP">1. MLP<a class="anchor-link" href="#1.-MLP">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In class we studied about MLP. In this part you have to implement your MLP and train and test it on Iris dataset.</p>
 
 </div>
 </div>
@@ -13198,7 +13170,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In class, we studied English handwritten digit classification problem using Keras framework and trained a neural network on the MNIST dataset. In this assignment, we would like to dig a little deeper and become more familiar with the implementation details, Keras features, and preprocessing stage in a deep-learning pipeline.</p>
+<h3 id="Iris-dataset">Iris dataset<a class="anchor-link" href="#Iris-dataset">&#182;</a></h3><hr>
+<p>The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.</p>
+<p>The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.</p>
+<p>You can see <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">this</a> link for more details.</p>
 
 </div>
 </div>
@@ -13206,15 +13181,263 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="1-Preprocessing-Stage">1 Preprocessing Stage<a class="anchor-link" href="#1-Preprocessing-Stage">&#182;</a></h2>
+<p>Let's get this simple dataset and see some samples of it.</p>
+
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_iris</span>
+<span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][:</span><span class="mi">10</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">][:</span><span class="mi">10</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The preprocessing of the dataset is one of the most important and time-consuming steps of any deep learning project. Most of the time, we have a dataset that is not well-processed and ready to be fed into a neural network. Sometimes, the data might even be clean and organized, but not suitable to fit to our problem.</p>
-<p>In this scenario, we have a dataset of Persian handwritten digits and we want to recognize digits only by looking at their image. Here is a brief stat of our dataset:</p>
+<h3 id="Implementation">Implementation<a class="anchor-link" href="#Implementation">&#182;</a></h3><hr>
+<p>Before going any further, we have to import some prerequisites:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you want to import some modules or implement some helper functions or classes you can do it in this cell.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, implement your MLP from zero.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MLP</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+  
+  <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    train MLP model on train data</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      x: 2d numpy array or list of train data</span>
+<span class="sd">      y: 1d or 2d numpy array or list of train data labels</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="kc">True</span>
+  
+  <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    test MLP model on test data</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      x: 2d numpy array or list of test data</span>
+<span class="sd">      y: 1d or 2d numpy array or list of test data labels</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      acc: In simplest way ratio between number of correct predicts with number </span>
+<span class="sd">           of all train data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="n">acc</span>
+  
+  <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    predict output of MLP model on input data</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      x: 1d or 2d numpy array or list of input data</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      pred: 1d numpy array or list or integer that represent output predicted </span>
+<span class="sd">            from MLP</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="n">pred</span>
+  
+  <span class="k">def</span> <span class="nf">save_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    save model to disk</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      model_path: path of model</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="kc">True</span>
+  
+  <span class="k">def</span> <span class="nf">load_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    load model from disk</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      model_path: path of model</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initilize_model</span><span class="p">():</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  initilize a MLP model that classify Iris dataset</span>
+<span class="sd">  </span>
+<span class="sd">  Returns:</span>
+<span class="sd">    model: A MLP object</span>
+<span class="sd">               </span>
+<span class="sd">  Hint: Consider number of features in Iris dataset and number of its classes </span>
+<span class="sd">        and initilize weigts.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+  
+  <span class="k">return</span> <span class="n">model</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">split_train_test</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">  split input data and labels to train and test sections.</span>
+<span class="sd">  </span>
+<span class="sd">  Args:</span>
+<span class="sd">    x: 2d numpy array or list of input data</span>
+<span class="sd">    y: 1d or 2d numpy array or list of data labels</span>
+<span class="sd">    </span>
+<span class="sd">  Returns:</span>
+<span class="sd">    train_data: 2d numpy array or list of train_data</span>
+<span class="sd">    train_labels: 1d or 2d numpy array or list of train data labels</span>
+<span class="sd">    test_data: 2d numpy array or list of test_data</span>
+<span class="sd">    test_labels: 1d or 2d numpy array or list of test data labels</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+  
+  <span class="k">return</span> <span class="n">train_data</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">test_data</span><span class="p">,</span> <span class="n">test_labels</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Test your implementation(dont change this cell):</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlp</span> <span class="o">=</span> <span class="n">initilize_model</span><span class="p">()</span>
+<span class="n">train_data</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">test_data</span><span class="p">,</span> <span class="n">test_labels</span> <span class="o">=</span> <span class="n">split_train_test</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="n">iris</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">])</span>
+<span class="n">mlp</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">)</span>
+<span class="n">mlp</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">mlp</span>
+<span class="n">new_mlp</span> <span class="o">=</span> <span class="n">initilize_model</span><span class="p">()</span>
+<span class="n">new_mlp</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;your model accuracy on test data is: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">new_mlp</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">test_data</span><span class="p">,</span> <span class="n">test_labels</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In class we studied about mathematical for back-propagation when activation function of last layer is relu. Now write mathematical formulas for softmax activation function and get delta formulas for all layers.</p>
 
 </div>
 </div>
@@ -13222,31 +13445,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table>
-<thead><tr>
-<th>Property</th>
-<th>value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Resolution of samples</td>
-<td>200 dpi</td>
-</tr>
-<tr>
-<td>Sample per each digit</td>
-<td>~10,000 samples</td>
-</tr>
-<tr>
-<td>Training samples:</td>
-<td>60,000 samples</td>
-</tr>
-<tr>
-<td>Test samples:</td>
-<td>20,000 samples</td>
-</tr>
-</tbody>
-</table>
+<p>$\color{red}{\text{Write your answer here}}$</p>
 
 </div>
 </div>
@@ -13254,7 +13453,571 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>First, let's download and explore our dataset. Run the following commands:</p>
+<h3 id="Notes">Notes<a class="anchor-link" href="#Notes">&#182;</a></h3><hr>
+<ul>
+<li></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="2.Text-classification">2.Text classification<a class="anchor-link" href="#2.Text-classification">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In class, we studied how to build a basic dense model. Now we want to learn how to prepare a text dataset in order to feed into a provided model. First, we start with a simple dataset and then, we try a harder example.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sentiment-Analysis-on-Movie-Reviews">Sentiment Analysis on Movie Reviews<a class="anchor-link" href="#Sentiment-Analysis-on-Movie-Reviews">&#182;</a></h2><p>This small dataset is available for free on NLTK. You can learn how to install <code>movie_reviews</code> dataset <a href="https://www.nltk.org/data.html">here</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Activation</span><span class="p">,</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Dropout</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Dense</span>
+<span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Model</span>
+<span class="kn">from</span> <span class="nn">keras.optimizers</span> <span class="k">import</span> <span class="n">Adam</span>
+<span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">backend</span> <span class="k">as</span> <span class="n">K</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In every deep learning task, we need to divide our dataset into train and test categories. The train category is used to train the model, and the test one is used to evaluate the trained model. The proportion of train and test dataset does not have any specific formula, and it is up to you, but you should consider the majority of the dataset as the train one.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span>  <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Split the documents into train and test datasets</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+<span class="n">document</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the documents here</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the labels here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Encoding-the-text-data">Encoding the text data<a class="anchor-link" href="#Encoding-the-text-data">&#182;</a></h3><p>In order to feed the text data into a deep model, we must convert the strings to numerical data. A variety of approaches are available for this purpose, and we use two of them for this task: <strong>One-Hot</strong> and <strong>TF-IDF</strong> encodings</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="One-Hot-encoding">One-Hot encoding<a class="anchor-link" href="#One-Hot-encoding">&#182;</a></h3><p>one-hot is a group of bits among which the legal combinations of values are only those with a single high (1) bit and all the others low (0). So, in our case, we should convert each word to an array which only one cell in the whole array must be 1, the one which represents that specific word.
+Then, in order to represent a document as a vector, we should sum all the words' vectors in the document</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">     Encode documents to One-Hot representation.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the document vectors here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As we studied in the TA class, for classification tasks we need to convert the labels into one-hot format.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">     Convert labels into One-Hot representation.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">ys</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the label vectors here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we build and train the model, and then visualize the results.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">recall</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Recall metric.</span>
+
+<span class="sd">    Only computes a batch-wise average of recall.</span>
+
+<span class="sd">    Computes the recall, a metric for multi-label classification of</span>
+<span class="sd">    how many relevant items are selected.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">true_positives</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">y_true</span> <span class="o">*</span> <span class="n">y_pred</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+    <span class="n">possible_positives</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+    <span class="n">recall</span> <span class="o">=</span> <span class="n">true_positives</span> <span class="o">/</span> <span class="p">(</span><span class="n">possible_positives</span> <span class="o">+</span> <span class="n">K</span><span class="o">.</span><span class="n">epsilon</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">recall</span>
+
+
+<span class="k">def</span> <span class="nf">precision</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Precision metric.</span>
+
+<span class="sd">    Only computes a batch-wise average of precision.</span>
+
+<span class="sd">    Computes the precision, a metric for multi-label classification of</span>
+<span class="sd">    how many selected items are relevant.</span>
+
+<span class="sd">    Source</span>
+<span class="sd">    ------</span>
+<span class="sd">    https://github.com/fchollet/keras/issues/5400#issuecomment-314747992</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">true_positives</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">y_true</span> <span class="o">*</span> <span class="n">y_pred</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+    <span class="n">predicted_positives</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">K</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+    <span class="n">precision</span> <span class="o">=</span> <span class="n">true_positives</span> <span class="o">/</span> <span class="p">(</span><span class="n">predicted_positives</span> <span class="o">+</span> <span class="n">K</span><span class="o">.</span><span class="n">epsilon</span><span class="p">())</span>
+    <span class="k">return</span> <span class="n">precision</span>
+
+
+<span class="k">def</span> <span class="nf">f1</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Calculate the F1 score.&quot;&quot;&quot;</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">precision</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">recall</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">((</span><span class="n">p</span> <span class="o">*</span> <span class="n">r</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="n">r</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">create_model</span><span class="p">(</span><span class="n">nb_classes</span><span class="p">,</span> <span class="n">input_shape</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create a MLP model.&quot;&quot;&quot;</span>
+    <span class="n">input_</span> <span class="o">=</span> <span class="n">Input</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="n">input_shape</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">input_</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="n">nb_classes</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">Activation</span><span class="p">(</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Model</span><span class="p">(</span><span class="n">inputs</span><span class="o">=</span><span class="n">input_</span><span class="p">,</span> <span class="n">outputs</span><span class="o">=</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x_train&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="s1">&#39;y_train&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;x_test&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="s1">&#39;y_test&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]}</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">create_model</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="s2">&quot;adam&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;accuracy&quot;</span><span class="p">,</span><span class="n">f1</span><span class="p">,</span><span class="n">recall</span><span class="p">,</span><span class="n">precision</span><span class="p">])</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_train&#39;</span><span class="p">],</span>
+              <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+              <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_test&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_test&#39;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">history_dict</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+
+<span class="n">epochs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">acc_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+<span class="n">val_acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;val_acc&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_acc</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="TF-IDF-encoding">TF-IDF encoding<a class="anchor-link" href="#TF-IDF-encoding">&#182;</a></h3><p>TFIDF, short for term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus<a href="http://i.stanford.edu/~ullman/mmds/ch1.pdf">[1]</a>. TF-IDF considers both frequency of a word in the document and Inverse Document Frequency which determines whether a word is common in documents or not. You can learn more about this approach <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">here</a> in order to implement it. Note that you need to provide a vector for each document with the same shape as the One-Hot vector but with different values.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">     Encode documents to TF-IDF representation.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the document vectors here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we train and visualize our model again. Note that the result may vary with respect to the preprocessing you do or the tokenizer you use to split your data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x_train&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="s1">&#39;y_train&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;x_test&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="s1">&#39;y_test&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]}</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">create_model</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="s2">&quot;adam&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;accuracy&quot;</span><span class="p">,</span><span class="n">f1</span><span class="p">,</span><span class="n">recall</span><span class="p">,</span><span class="n">precision</span><span class="p">])</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_train&#39;</span><span class="p">],</span>
+              <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+              <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_test&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_test&#39;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">history_dict</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+
+<span class="n">epochs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">acc_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+<span class="n">val_acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;val_acc&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_acc</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sentiment-Analysis-on-IMDB">Sentiment Analysis on IMDB<a class="anchor-link" href="#Sentiment-Analysis-on-IMDB">&#182;</a></h2><p>Working with this dataset is a bit tricky. download the dataset from <a href="https://ai.stanford.edu/~amaas/data/sentiment/">here</a>, then use the Training set as your whole dataset. You can use a sample of 12500 reviews if you faced any ram problems, but remember to include both negative and positive reviews equally.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Import necessary modules, download and prepare the requested dataset</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Split the documents into train and test datasets</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+<span class="n">document</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the documents here</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the labels here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now you train the dense model on this dataset. Use one of the encoding approaches you used for the prior dataset and then feed the preprocessed data into the model.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">     Encode documents to a vector representation.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the document vectors here</span>
+<span class="n">ys</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the label vectors here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x_train&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="s1">&#39;y_train&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;x_test&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="s1">&#39;y_test&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]}</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">create_model</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="s2">&quot;adam&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;accuracy&quot;</span><span class="p">,</span><span class="n">f1</span><span class="p">,</span><span class="n">recall</span><span class="p">,</span><span class="n">precision</span><span class="p">])</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_train&#39;</span><span class="p">],</span>
+              <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+              <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_test&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_test&#39;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">history_dict</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+
+<span class="n">epochs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">acc_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+<span class="n">val_acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;val_acc&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_acc</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Word-Embeddings">Word Embeddings<a class="anchor-link" href="#Word-Embeddings">&#182;</a></h3><p>In this section, we want to use a pre-trained word embedding in order to encode the reviews. To do so, we leverage the Google News Word2Vec model, a model that provides 300 semantic features for each word. These features are extracted with respect to the position of the training word and by considering adjacent words in the training data (Google News). More detailed information will be discussed in your class later.</p>
+<p>You can download the pre-trained model from <a href="https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz">here</a>, and you may want to use <a href="https://radimrehurek.com/gensim/">gensim</a> to load the file. Next, you need to replace the document vector with the average of word vectors that are available in W2V model. Use a weighted average in order to consider the frequency of a word as well as its presence.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">     Encode documents to a vector representation.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="n">xs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the document vectors here</span>
+<span class="n">ys</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the label vectors here</span>
+
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x_train&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="s1">&#39;y_train&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;x_test&#39;</span><span class="p">:</span> <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">],</span> <span class="s1">&#39;y_test&#39;</span><span class="p">:</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]}</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">create_model</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span><span class="n">optimizer</span><span class="o">=</span><span class="s2">&quot;adam&quot;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;accuracy&quot;</span><span class="p">,</span><span class="n">f1</span><span class="p">,</span><span class="n">recall</span><span class="p">,</span><span class="n">precision</span><span class="p">])</span>
+<span class="n">history</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_train&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_train&#39;</span><span class="p">],</span>
+              <span class="n">batch_size</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span>
+              <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+              <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;x_test&#39;</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;y_test&#39;</span><span class="p">]))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">history_dict</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+
+<span class="n">epochs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="n">acc_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
+<span class="n">val_acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;val_acc&#39;</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_acc</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation accuracy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Acc&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="3.-Image-classification">3. Image classification<a class="anchor-link" href="#3.-Image-classification">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In this part we want to classify images of forg from images of penguin.</p>
+<p>First we should download the datatset.</p>
 
 </div>
 </div>
@@ -13265,10 +14028,58 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Download the dataset</span>
-<span class="o">!</span> wget -q http://iust-deep-learning.github.io/972/static_files/assignments/asg01_assets/data.zip
+<span class="o">!</span> wget -q http://iust-deep-learning.github.io/981/static_files/assignments/asg01_assets/data.zip
   
 <span class="c1"># Then, Extact it</span>
 <span class="o">!</span> unzip data.zip -d .
+<span class="o">!</span> cat frog_url.txt
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As you see two file have the url address of images so you should download and save them in correct folders. Do it in this cell:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As a offer see some images of this dataset so change this code</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">img_path</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+<span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13289,12 +14100,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.applications.vgg16</span> <span class="k">import</span> <span class="n">VGG16</span>
+<span class="kn">from</span> <span class="nn">keras.preprocessing</span> <span class="k">import</span> <span class="n">image</span>
+<span class="kn">from</span> <span class="nn">keras.applications.vgg16</span> <span class="k">import</span> <span class="n">preprocess_input</span>
+<span class="kn">from</span> <span class="nn">keras.applications.vgg16</span> <span class="k">import</span> <span class="n">decode_predictions</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span> <span class="c1"># Make the figures a bit bigger</span>
-
-<span class="kn">from</span> <span class="nn">util</span> <span class="k">import</span> <span class="n">read_raw_dataset</span>
 </pre></div>
 
     </div>
@@ -13305,7 +14115,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's load the dataset using the provided function <code>read_raw_dataset</code>:</p>
+<p>In every deep learning task, we need to divide our dataset into train and test categories. The train category is used to train the model, and the test one is used to evaluate the trained model. The proportion of train and test dataset does not have any specific formula, and it is up to you, but you should consider the majority of the dataset as the train one.</p>
 
 </div>
 </div>
@@ -13315,16 +14125,15 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ds_images</span><span class="p">,</span> <span class="n">ds_labels</span> <span class="o">=</span> <span class="n">read_raw_dataset</span><span class="p">(</span><span class="s2">&quot;train.cdb&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span>  <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Split the images into train and test datasets</span>
+<span class="sd">  &#39;&#39;&#39;</span>
+<span class="n">images</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the images here</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span> <span class="c1"># Put the labels here</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Images:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">ds_images</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ds_images</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">ds_images</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ds_images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Labels:&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">ds_labels</span><span class="p">[:</span><span class="mi">30</span><span class="p">])</span>
+  <span class="c1">########################################</span>
+  <span class="c1">#     Put your implementation here     #</span>
+  <span class="c1">########################################</span>
 </pre></div>
 
     </div>
@@ -13335,8 +14144,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, <code>train_images</code> is a list of images and <code>train_labels</code> contains the labels for each element in the image list. Each image is represented as 2D (numpy) array of floats/ints.</p>
-<p>So, lets look at some of the images:</p>
+<p>Now we change images to numeric feature vectors to input them to network.</p>
+<p>We do this work with vgg16 model. It is a CNN. CNN will study in future.</p>
 
 </div>
 </div>
@@ -13346,12 +14155,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Randomly sample images, Re run the cell to see new images.</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">ds_images</span><span class="p">))),</span> <span class="mi">10</span><span class="p">)):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">ds_images</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Label </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_labels</span><span class="p">[</span><span class="n">index</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">vgg16_model</span> <span class="o">=</span> <span class="n">VGG16</span><span class="p">(</span><span class="n">weights</span><span class="o">=</span><span class="s1">&#39;imagenet&#39;</span><span class="p">,</span> <span class="n">include_top</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">vgg16_model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13362,7 +14167,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pretty great! ha? But it seems images are not in a fixed dimension. Let's check our hypothesis:</p>
+<p>For prepare images for getting them to network some preprocessing is necessary. Do this in this cell.</p>
+<p>For example normalize images.</p>
 
 </div>
 </div>
@@ -13372,11 +14178,21 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">unique_heights</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">m</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">ds_images</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;unique heights:&quot;</span><span class="p">,</span> <span class="n">unique_heights</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    preprocess input image</span>
 
-<span class="n">unique_widths</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">([</span><span class="n">m</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">ds_images</span><span class="p">]))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;unique widths:&quot;</span><span class="p">,</span> <span class="n">unique_widths</span><span class="p">)</span>
+<span class="sd">    Args:</span>
+<span class="sd">      image: 2d numpy array input image</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      img: 2d numpy array preprocessed image</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    <span class="k">return</span> <span class="n">img</span>
 </pre></div>
 
     </div>
@@ -13387,8 +14203,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Unfortunately, the images in our dataset do not have equal dimensions. So, we have to implement a function to fit the image in a fixed frame.</p>
-<p><strong>Note</strong>: There might be a situation where the image is bigger than the frame size; So, we first need to scale it down and then fit it into a fixed frame.</p>
+<p>Now first preprocess images then changing them to feature vectors.</p>
 
 </div>
 </div>
@@ -13398,103 +14213,205 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fit_and_resize_image</span><span class="p">(</span><span class="n">src_image</span><span class="p">,</span> <span class="n">dst_image_size</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+<span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]:</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="c1"># first read image</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">))</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">preprocess_image</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="n">vgg16_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="n">ff</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">image</span> <span class="ow">in</span> <span class="n">images</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]:</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="c1"># first read image</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="p">(</span><span class="mi">224</span><span class="p">,</span> <span class="mi">224</span><span class="p">))</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">preprocess_image</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="n">features</span> <span class="o">=</span> <span class="n">vgg16_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+    <span class="n">ff</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="n">xs</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you think changing format of labels make your work easier then you can do it in this cell and delete two last line.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ys</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;train&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+<span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">][:]</span>
+<span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">][:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now implement a MLP for this task to classify frog images from penguin images.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If you want to import some modules or implement some helper functions or classes you can do it in this cell.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, implement your MLP from zero.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MLP</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+  
+  <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    train MLP model on train data</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      x: 2d numpy array or list of train data</span>
+<span class="sd">      y: 1d or 2d numpy array or list of train data labels</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="kc">True</span>
+  
+  <span class="k">def</span> <span class="nf">test</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    test MLP model on test data</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      x: 2d numpy array or list of test data</span>
+<span class="sd">      y: 1d or 2d numpy array or list of test data labels</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      acc: In simplest way ratio between number of correct predicts with number </span>
+<span class="sd">           of all train data</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="n">acc</span>
+  
+  <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    predict output of MLP model on input data</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      x: 1d or 2d numpy array or list of input data</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">      pred: 1d numpy array or list or integer that represent output predicted </span>
+<span class="sd">            from MLP</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="n">pred</span>
+  
+  <span class="k">def</span> <span class="nf">save_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    save model to disk</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      model_path: path of model</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="kc">True</span>
+  
+  <span class="k">def</span> <span class="nf">load_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">model_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    load model from disk</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">      model_path: path of model</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1">########################################</span>
+    <span class="c1">#     Put your implementation here     #</span>
+    <span class="c1">########################################</span>
+    
+    <span class="k">return</span> <span class="kc">True</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initilize_model</span><span class="p">():</span>
   <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  fit the image in fixed size black background &amp; resize it if needed.</span>
+<span class="sd">  initilize a MLP model that classify Iris dataset</span>
 <span class="sd">  </span>
-<span class="sd">  Args:</span>
-<span class="sd">    src_image: 2d numpy array of image it may be in any shape</span>
-<span class="sd">    dst_image_size: size of square background frame</span>
-<span class="sd">    </span>
 <span class="sd">  Returns:</span>
-<span class="sd">    dst_image: 2d numpy array with shape (dst_image_size, dst_image_size). src_image should </span>
-<span class="sd">               be fitted in the center of the background.</span>
+<span class="sd">    model: A MLP object</span>
 <span class="sd">               </span>
-<span class="sd">  Hint: OpenCv.resize, np.zeors may be useful for you.</span>
+<span class="sd">  Hint: Consider number of features in Iris dataset and number of its classes </span>
+<span class="sd">        and initilize weigts.</span>
 <span class="sd">  &quot;&quot;&quot;</span>
   
   <span class="c1">########################################</span>
   <span class="c1">#     Put your implementation here     #</span>
   <span class="c1">########################################</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a constant for our image size. please do not change it</span>
-<span class="n">IMAGE_SIZE</span> <span class="o">=</span> <span class="mi">32</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Test your implementation using the following cell:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">ds_images</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Before&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">fit_and_resize_image</span><span class="p">(</span><span class="n">ds_images</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">IMAGE_SIZE</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;After&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Congradulations! You've successfully implemented the <code>fit_and_resize_image</code> function. Now it's time to use that and create a function to read the dataset, process it, and return it as a Numpy array. As you may have noticed, image values are in the 0-255 range (0 is black and 255 is white). Generally, we first normalize our input when we want to feed them into a neural network.  So, don't forget to normalize the images.</p>
-<p><strong>Note:</strong> When we're solving a multi-label classification probelm it is important for the labels to be in one-hot format. So remember to convert them to one-hot format before returning the function.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">read_dataset</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">,</span> <span class="n">images_size</span><span class="o">=</span><span class="mi">32</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Read &amp; process Persian handwritten digits dataset</span>
-<span class="sd">  </span>
-<span class="sd">  Args:</span>
-<span class="sd">    dataset_path: path to dataset file</span>
-<span class="sd">    image_size: size that should be fixed for all images.</span>
-<span class="sd">    </span>
-<span class="sd">  Returns:</span>
-<span class="sd">    X: numpy ndarry with shape (num_samples, images_size, images_size) for normalized images </span>
-<span class="sd">    y: numpy ndarry with shape (num_samples, 10) for labels in one-hot format</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="n">images</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">read_raw_dataset</span><span class="p">(</span><span class="n">dataset_path</span><span class="p">)</span>
-
-  <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">),</span> <span class="n">images_size</span><span class="p">,</span> <span class="n">images_size</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-  <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">),</span> <span class="mi">10</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
   
-  <span class="c1">########################################</span>
-  <span class="c1">#     Put your implementation here     #</span>
-  <span class="c1">########################################</span>
-  
-  <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span>
+    <span class="k">return</span> <span class="n">model</span>
 </pre></div>
 
     </div>
@@ -13505,23 +14422,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question:</strong> Why should we normalize images to the [0-1] range?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\color{red}{\text{Write you answer here}}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Great! Now we have everything ready to build our neural network.</p>
+<p>Test your implementation(dont change this cell):</p>
 
 </div>
 </div>
@@ -13531,781 +14432,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_images</span><span class="p">,</span> <span class="n">train_labels</span> <span class="o">=</span> <span class="n">read_dataset</span><span class="p">(</span><span class="s2">&quot;train.cdb&quot;</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span><span class="p">)</span>
-<span class="n">test_images</span><span class="p">,</span> <span class="n">test_labels</span> <span class="o">=</span> <span class="n">read_dataset</span><span class="p">(</span><span class="s2">&quot;test.cdb&quot;</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">train_images</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">60000</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">test_images</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">20000</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">train_labels</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">60000</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">test_labels</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="p">(</span><span class="mi">20000</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-
-<span class="k">assert</span> <span class="n">train_images</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.0</span>
-<span class="k">assert</span> <span class="n">test_images</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.0</span>
-
-<span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">train_images</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="ow">and</span> <span class="n">train_images</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">1</span>
-<span class="k">assert</span> <span class="mf">0.</span> <span class="o">&lt;=</span> <span class="n">test_images</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="ow">and</span> <span class="n">test_images</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">&lt;=</span> <span class="mi">1</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">train_images</span><span class="p">))),</span> <span class="mi">6</span><span class="p">)):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">train_images</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;none&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Label </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">train_labels</span><span class="p">[</span><span class="n">index</span><span class="p">]))))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2-Building-the-model">2 Building the model<a class="anchor-link" href="#2-Building-the-model">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In class, we exclusively used Keras Layers API to build a neural network; but, now, we want to get a little deeper and see what's going on behind this API.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.1-Low-level-implementation">2.1 Low level implementation<a class="anchor-link" href="#2.1-Low-level-implementation">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>When we code in Keras, we are simply stacking up layer instances. However the implementation of neural networks is basically nothing but matrix multiplication and applying functions on them.  Deep learning libraries are made to perform matrix multiplication in the first place; so, each of these frameworks should be equipped with matrix manipulation tools and APIs. Keras is no exception.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Perhaps you might think that Keras library has much higher level abstractions which makes significantly easier to work with. So, why do we have to learn low-level APIs? The point is that there are situations that we need low-level APIs. For example:</p>
-<ul>
-<li>Sometimes the layers we want to use are not included in the default Keras implementation thus we have to implement them by ourselves.</li>
-<li>More importantly, other deep learning frameworks such as Tensorflow and Pytorch are more commonly used in low-level mode. Learning such APIs will enable us to better understand the source codes of papers and existing projects available on the Internet.</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Before starting to code, let's review some of the mathematics behind neural networks. We store connection's weights between layers in the shape of a matrix. Also, we represent layer bais as a matrix too. Here is an example:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://iust-deep-learning.github.io/972/static_files/assignments/asg01_assets/nn_weight.jpg"  width="600"/></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Suppose we have two layers in a neural network. Let $x \in \mathbb{R}^{N\times1}$ be the activations of the previous layer with $N$ nodes, $W$ be the weight of connections and $B$ be the bais for the current layer. Write an algebraic equation for the current layer with $M$ nodes and activations $h$. Also, specify dimensions of matrices $W, B, h$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\color{red}{\text{Write you answer here}}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>But, computers, especially GPUs, are much more efficient in parallel computing. So, instead of feeding single input $\overrightarrow{x}$ through our neural network, why not feed them a batch? Thus, the input vector $\overrightarrow{x} \in \mathbb{R}^{N\times1}$ will be a matrix in the shape of $\mathbb{R}^{b \times N}$ ($b$ is the batch size) and each individual input will be one of $x$ rows.</p>
-<p>Rewritre equation for $h$ above and specify the dimensions of matrices $W, B, h$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\color{red}{\text{Write you answer here}}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's import some prerequisites:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras</span> <span class="k">import</span> <span class="n">backend</span> <span class="k">as</span> <span class="n">K</span>
-<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="k">import</span> <span class="n">Layer</span><span class="p">,</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Dropout</span>
-<span class="kn">from</span> <span class="nn">keras.models</span> <span class="k">import</span> <span class="n">Sequential</span>
-<span class="kn">from</span> <span class="nn">keras.utils.layer_utils</span> <span class="k">import</span> <span class="n">count_params</span>
-
-<span class="kn">from</span> <span class="nn">util</span> <span class="k">import</span> <span class="n">BaseModel</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Here is the model class that we're going to implement. <code>LowLevelMLP</code> is a simple MLP network with a configurable number of hidden layers.  To complete this section you need to fill its two methods <code>__init__()</code> and <code>build_model()</code>. We use  <code>__init__</code> to define networks weights and <code>build_model()</code> to specify operations between input and model weights to create the output.</p>
-<p><strong>Note</strong>: Using <code>keras.layers</code> is not allowed in this part. Please review keras documents for <a href="https://keras.io/layers/writing-your-own-keras-layers/">self.add_weight</a> and <a href="https://keras.io/backend/#backend-functions">K (Keras backend functions) </a></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Model configuration, Do not change</span>
-<span class="n">HIDDEN_LAYERS</span> <span class="o">=</span> <span class="p">[</span><span class="mi">512</span><span class="p">,</span> <span class="mi">128</span><span class="p">]</span>
-<span class="n">NUM_CLASSES</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">NUM_EPOCH</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">BATCH_SIZE</span> <span class="o">=</span> <span class="mi">512</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">LowLevelMLP</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-  
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_shape</span><span class="p">,</span> <span class="n">hidden_layers</span><span class="p">,</span> <span class="n">num_classes</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Initiate model with provided configuration</span>
-<span class="sd">    Args:</span>
-<span class="sd">      input_shape: size of input vector</span>
-<span class="sd">      hidden_layers: a list of integer, specify num hidden layer node from left to right,</span>
-<span class="sd">                     e.x.: [512, 128, ...]</span>
-<span class="sd">      num_classes: an integer defining number of classes, this is the number of model ouput nodes</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="nb">super</span><span class="p">(</span><span class="n">LowLevelMLP</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">()</span>
-    
-    <span class="bp">self</span><span class="o">.</span><span class="n">_input_shape</span> <span class="o">=</span> <span class="n">input_shape</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_hidden_layers</span> <span class="o">=</span> <span class="n">hidden_layers</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_num_classes</span> <span class="o">=</span> <span class="n">num_classes</span>
-    
-    <span class="c1"># Define model weights &amp; biases according to self.hidden_layers and self.num_classes </span>
-    <span class="c1"># To create weight you can use self.add_weight</span>
-    
-    <span class="bp">self</span><span class="o">.</span><span class="n">_model_weights</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">_model_baiases</span> <span class="o">=</span> <span class="p">[]</span>
-    
-    <span class="c1">########################################</span>
-    <span class="c1">#     Put your implementation here     #</span>
-    <span class="c1">########################################</span>
-    
-    
-  <span class="k">def</span> <span class="nf">build_model</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    The Model logic sits here.</span>
-<span class="sd">    Args:</span>
-<span class="sd">      x: an input tensor in shape of (?, input_size), ? is batch size and will be determined at the training phase</span>
-<span class="sd">         e.x.: x is tensor with shape (?, 784) for the MNIST dataset</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">      pred: an output tensor with shape (?, self.num_classes)</span>
-
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="c1"># Define operations between input and model weights here</span>
-    <span class="c1"># K.dot, K.relu, K.softmax might be useful for you.</span>
-    
-    <span class="c1">########################################</span>
-    <span class="c1">#     Put your implementation here     #</span>
-    <span class="c1">########################################</span>
-    
-
-<span class="n">ll_mlp</span> <span class="o">=</span> <span class="n">LowLevelMLP</span><span class="p">(</span><span class="n">IMAGE_SIZE</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">HIDDEN_LAYERS</span><span class="p">,</span> <span class="n">NUM_CLASSES</span><span class="p">)</span>
-<span class="n">ll_mlp</span><span class="o">.</span><span class="n">_model_weights</span><span class="p">,</span> <span class="n">ll_mlp</span><span class="o">.</span><span class="n">_model_baiases</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span>  <span class="n">count_params</span><span class="p">(</span><span class="n">ll_mlp</span><span class="o">.</span><span class="n">trainable_weights</span><span class="p">)</span> <span class="o">==</span> <span class="nb">sum</span><span class="p">(</span>
-    <span class="p">[(</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="n">IMAGE_SIZE</span> <span class="o">**</span> <span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">HIDDEN_LAYERS</span><span class="p">,</span> <span class="n">HIDDEN_LAYERS</span> <span class="o">+</span> <span class="p">[</span><span class="n">NUM_CLASSES</span><span class="p">])]</span> 
-    <span class="o">+</span> <span class="n">HIDDEN_LAYERS</span> 
-    <span class="o">+</span> <span class="p">[</span><span class="n">NUM_CLASSES</span><span class="p">]</span>
-<span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Let's train out model</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Before start training the model, we need to reshape the input so that each 32x32 image</span>
-<span class="c1"># becomes a single 1024 dimensional vector.</span>
-
-<span class="n">x_train</span> <span class="o">=</span> <span class="n">train_images</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span> <span class="o">*</span> <span class="n">IMAGE_SIZE</span><span class="p">))</span>
-<span class="n">y_train</span> <span class="o">=</span> <span class="n">train_labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
-
-<span class="n">x_test</span> <span class="o">=</span> <span class="n">test_images</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">IMAGE_SIZE</span> <span class="o">*</span> <span class="n">IMAGE_SIZE</span><span class="p">))</span>
-<span class="n">y_test</span> <span class="o">=</span> <span class="n">test_labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">x_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">x_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ll_mlp</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
-<span class="n">ll_mlp_history</span> <span class="o">=</span> <span class="n">ll_mlp</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="n">NUM_EPOCH</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span> <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now visualize the traning:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">visualize_loss_and_acc</span><span class="p">(</span><span class="n">history</span><span class="p">):</span>
-  <span class="n">history_dict</span> <span class="o">=</span> <span class="n">history</span><span class="o">.</span><span class="n">history</span>
-  <span class="n">loss_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;loss&#39;</span><span class="p">]</span>
-  <span class="n">val_loss_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;val_loss&#39;</span><span class="p">]</span>
-  <span class="n">acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
-
-  <span class="n">epochs</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">acc</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-
-  <span class="n">f</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>
-
-  <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">loss_values</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training loss&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_loss_values</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation loss&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation loss&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Loss&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
-
-  <span class="n">acc_values</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">]</span>
-  <span class="n">val_acc</span> <span class="o">=</span> <span class="n">history_dict</span><span class="p">[</span><span class="s1">&#39;val_acc&#39;</span><span class="p">]</span>
-
-  <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">acc</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Training acc&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">epochs</span><span class="p">,</span> <span class="n">val_acc</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Validation acc&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Training and validation accuracy&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Epochs&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Loss&#39;</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
-  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">visualize_loss_and_acc</span><span class="p">(</span><span class="n">ll_mlp_history</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remember to run this cell after each time you update the model, </span>
-<span class="c1"># this is one of deliverable items of your assignemnt</span>
-<span class="n">ll_mlp</span><span class="o">.</span><span class="n">save_weights</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;ll_mlp.h5&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="2.2-Custom-Layer:-Softmax">2.2 Custom Layer: Softmax<a class="anchor-link" href="#2.2-Custom-Layer:-Softmax">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In this section, we're going to implement A custom Keras layer, A much realistic situation. For the sake of simplicity, we want to re-implement Softmax Layer. Before going through softmax implementation, let's review some of softmax details:</p>
-<p>Softmax has an interesting property that is quite useful in practice, Softmax is invariant to constant offsets in the input, that is, for any input vector $x$ and any constant $c$,</p>
-$$
-\mathrm{softmax(x) = softmax(x+c)}
-$$<p>where $x + c$ means adding the constant c to every dimension of $x$. Remember that:</p>
-$$
-softmax(x)_i = \dfrac{e^{x_i}}{\sum_{j} e^{x_j}}
-$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>In practice, we make use of this property and choose $c = − max_i\  x_i$ when computing softmax probabilities for numerical stability (i.e., subtracting its maximum element from all elements of $x$).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Softmax2D</span><span class="p">(</span><span class="n">Layer</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">  Softmax activation function, Only works for 2d arrays.</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-
-  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-    <span class="nb">super</span><span class="p">(</span><span class="n">Softmax2D</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-    <span class="c1"># We don&#39;t have any configuration for this custom layer,</span>
-    <span class="c1"># But in future you should save any configuration related </span>
-    <span class="c1"># to your layer in its constructor</span>
-    
-  <span class="k">def</span> <span class="nf">compute_output_shape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_shape</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Computes the output shape of the layer.</span>
-
-<span class="sd">    Assumes that the layer will be built</span>
-<span class="sd">    to match that input shape provided.</span>
-
-<span class="sd">    Args:</span>
-<span class="sd">      input_shape: Shape tuple (tuple of integers)</span>
-<span class="sd">        or list of shape tuples (one per output tensor of the layer).</span>
-<span class="sd">        Shape tuples can include None for free dimensions,</span>
-<span class="sd">        instead of an integer.</span>
-
-<span class="sd">    Returns:</span>
-<span class="sd">      An input shape tuple.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># softmax of course doesn&#39;t change input shape, </span>
-    <span class="c1"># so we can simply return input_shape as output shape</span>
-    <span class="k">return</span> <span class="n">input_shape</span> 
-  
-  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_shape</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This is where you will define your weights. </span>
-<span class="sd">    This method must set self.built = True at the end, </span>
-<span class="sd">    which can be done by calling super(Softmax2D, self).build().</span>
-<span class="sd">    </span>
-<span class="sd">    Args:</span>
-<span class="sd">      input_shape: Keras tensor (future input to layer)</span>
-<span class="sd">        or list/tuple of Keras tensors to reference</span>
-<span class="sd">        for weight shape computations.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># As softmax is simple activation layer, we don&#39;t need any weight  </span>
-    <span class="c1"># definitions for this layer.</span>
-    <span class="nb">super</span><span class="p">(</span><span class="n">Softmax2D</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">build</span><span class="p">(</span><span class="n">input_shape</span><span class="p">)</span>
-    
-  <span class="k">def</span> <span class="nf">call</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This is where the layer&#39;s logic lives.</span>
-<span class="sd">    </span>
-<span class="sd">    Args:</span>
-<span class="sd">      x: Input tensor, or list/tuple of input tensors.</span>
-<span class="sd">      </span>
-<span class="sd">    Returns:</span>
-<span class="sd">      A tensor.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">orig_shape</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span>
-    
-    <span class="c1">########################################</span>
-    <span class="c1">#     Put your implementation here     #</span>
-    <span class="c1">########################################</span>
-    
-    <span class="k">assert</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">orig_shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">orig_shape</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">x</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test your implementation</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1001</span><span class="p">,</span> <span class="mi">1002</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]]))</span>
-<span class="n">test2</span> <span class="o">=</span> <span class="n">K</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span><span class="n">Softmax2D</span><span class="p">()(</span><span class="n">x</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">test2</span><span class="p">)</span>
-<span class="n">ans2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
-  <span class="p">[</span><span class="mf">0.26894142</span><span class="p">,</span> <span class="mf">0.73105858</span><span class="p">],</span>
-  <span class="p">[</span><span class="mf">0.26894142</span><span class="p">,</span> <span class="mf">0.73105858</span><span class="p">]])</span>
-<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">test2</span><span class="p">,</span> <span class="n">ans2</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">05</span><span class="p">,</span> <span class="n">atol</span><span class="o">=</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">06</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed!&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>How to use our custom layer in practice?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create simple MLP network similar to what you implmented in previous section</span>
-<span class="n">s2d_mlp</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">s2d_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">512</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
-<span class="n">s2d_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
-<span class="n">s2d_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="n">NUM_CLASSES</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
-<span class="n">s2d_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Softmax2D</span><span class="p">())</span> <span class="c1"># This is your custom layer, </span>
-
-<span class="c1"># compile &amp; train model</span>
-<span class="n">s2d_mlp</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
-<span class="n">s2d_history</span> <span class="o">=</span> <span class="n">s2d_mlp</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span>
-    <span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> 
-    <span class="n">epochs</span><span class="o">=</span><span class="n">NUM_EPOCH</span><span class="p">,</span> 
-    <span class="n">batch_size</span><span class="o">=</span><span class="n">BATCH_SIZE</span><span class="p">,</span> 
-    <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">visualize_loss_and_acc</span><span class="p">(</span><span class="n">s2d_history</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remember to run this cell after each time you update the model, </span>
-<span class="c1"># this is one of deliverable items of your assignemnt</span>
-<span class="n">s2d_mlp</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;s2d_mlp.h5&#39;</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3-Dropout">3 Dropout<a class="anchor-link" href="#3-Dropout">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As you see, the validation error of the model starts to grow around epoch 5. But, our network is being optimized on the training loss during this time and its error is continuously reduced if the training dataset is not big enough (which is the case here). The model has mastered the task on the training set, but the learned network doesn't generalize to new examples that it has never seen!</p>
-<p>Dropout is one of the most common regularization techniques used to prevent overfitting. It randomly shuts down some neurons in each iteration.</p>
-<p><strong>Question: </strong> Why Dropout helps model generalization (not overfitting)? What is the idea behind it? Explain with at least three reasons (feel free to use Google).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\color{red}{\text{Write you answer here}}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Improving-IMDB-sentiment-classifier">Improving IMDB sentiment classifier<a class="anchor-link" href="#Improving-IMDB-sentiment-classifier">&#182;</a></h3><p>Below is an MLP that is supposed to classify reviews in IMDB website as positive or negative (similar to what we saw in the class). But, this basic model starts to overfit very soon and, as a result, its performance on the validation set drops quickly. So, in this section, you need to improve this scenario. The following model is the base model; so, please do not change it. We will need it to compare our new model's performance.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">util</span> <span class="k">import</span> <span class="n">load_imdb_dataset</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">),</span> <span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">load_imdb_dataset</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imdb_mlp</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-<span class="n">imdb_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">10000</span><span class="p">,)))</span>
-<span class="n">imdb_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">))</span>
-<span class="n">imdb_mlp</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">))</span>
-
-<span class="n">imdb_mlp</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span> 
-              <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> 
-              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
-
-<span class="n">imdb_mlp_history</span> <span class="o">=</span> <span class="n">imdb_mlp</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> 
-                                <span class="n">y_train</span><span class="p">,</span> 
-                                <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> 
-                                <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> 
-                                <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy on Test set is:&quot;</span><span class="p">,</span> <span class="n">imdb_mlp</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">visualize_loss_and_acc</span><span class="p">(</span><span class="n">imdb_mlp_history</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>As you can see, The model is overfitting quite fast! In this section you have to change the model, its prameters, and maybe add new layers to improve overfitting!</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">imdb_imprv</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
-
-<span class="c1">########################################</span>
-<span class="c1">#     Put your implementation here     #</span>
-<span class="c1">########################################</span>
-
-<span class="n">imdb_imprv</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;rmsprop&#39;</span><span class="p">,</span> 
-              <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;binary_crossentropy&#39;</span><span class="p">,</span> 
-              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;acc&#39;</span><span class="p">])</span>
-
-<span class="n">imdb_imprv_history</span> <span class="o">=</span> <span class="n">imdb_imprv</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> 
-                                <span class="n">y_train</span><span class="p">,</span> 
-                                <span class="n">epochs</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> 
-                                <span class="n">batch_size</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span> 
-                                <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy on Test set is:&quot;</span><span class="p">,</span> <span class="n">imdb_imprv</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Improved model:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">visualize_loss_and_acc</span><span class="p">(</span><span class="n">imdb_imprv_history</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Base model:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">visualize_loss_and_acc</span><span class="p">(</span><span class="n">imdb_mlp_history</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question:</strong> Briefly explain why your changes improved model performance on the test set.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\color{red}{\text{Write you answer here}}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Remember to run this cell after each time you update the model, </span>
-<span class="c1"># this is one of deliverable items of your assignemnt</span>
-<span class="n">imdb_imprv</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;imdb_imprv.h5&#39;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlp</span> <span class="o">=</span> <span class="n">initilize_model</span><span class="p">()</span>
+<span class="n">mlp</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;your model accuracy on test data is: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">mlp</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])))</span>
+<span class="n">mlp</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;topvgg16_model.h5&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14323,13 +14453,13 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Congratulations! You finished the assignment &amp; you're ready to submit your work. Please follow the instructions:</p>
+<p>Congratulations! You finished the assignment &amp; you're ready to submit your work. Please follow the instruction:</p>
 <ol>
 <li>Check and review your answers. Make sure all of the cell outputs are what you want. </li>
 <li>Select File &gt; Save.</li>
-<li>Run <strong>Make Submission</strong> cell, It may take several minutes and it may ask you for your credential.</li>
+<li>Run <strong>Create Submission</strong> cell, It may take several minutes and it may ask you for your credential.</li>
 <li>Run <strong>Download Submission</strong> cell to obtain your submission as a zip file.</li>
-<li>Grab downloaded file (<code>dl_asg01__xx__xx.zip</code>), compose an email to iust.dl972+asg01@gmail.com, Put the zip file in attachments and use <code>assignment_01</code> as title.</li>
+<li>Grab downloaded file (<code>dl_asg01__xx__xx.zip</code>) and submit it via <a href="https://forms.gle/3srwTZhBbc4KfXaR8">https://forms.gle/3srwTZhBbc4KfXaR8</a>.</li>
 </ol>
 
 </div>
@@ -14346,7 +14476,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Make-Submission-(Run-the-cell)">Make Submission (Run the cell)<a class="anchor-link" href="#Make-Submission-(Run-the-cell)">&#182;</a></h2>
+<h2 id="Create-Submission-(Run-the-cell)">Create Submission (Run the cell)<a class="anchor-link" href="#Create-Submission-(Run-the-cell)">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14378,7 +14508,7 @@ $$
 <span class="s1">});</span>
 <span class="s1">&#39;&#39;&#39;</span>
 <span class="n">repo_name</span> <span class="o">=</span> <span class="s1">&#39;iust-deep-learning-assignments&#39;</span>
-<span class="n">submission_file_name</span> <span class="o">=</span> <span class="s1">&#39;dl_asg01__</span><span class="si">%s</span><span class="s1">__</span><span class="si">%s</span><span class="s1">.zip&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">student_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span>  <span class="s1">&#39;_&#39;</span><span class="p">))</span>
+<span class="n">submission_file_name</span> <span class="o">=</span> <span class="s1">&#39;dl_asg02__</span><span class="si">%s</span><span class="s1">__</span><span class="si">%s</span><span class="s1">.zip&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">student_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span>  <span class="s1">&#39;_&#39;</span><span class="p">))</span>
 
 <span class="o">!</span> tar xf hub-linux-amd64-2.10.0.tgz
 <span class="o">!</span> <span class="nb">cd</span> hub-linux-amd64-2.10.0/ <span class="o">&amp;&amp;</span> chmod a+x install <span class="o">&amp;&amp;</span> ./install
@@ -14407,7 +14537,7 @@ $$
 <span class="o">!</span> git clone <span class="s2">&quot;</span><span class="nv">$repo_url_with_token</span><span class="s2">&quot;</span>
 <span class="o">!</span> cp -r <span class="s2">&quot;</span><span class="nv">$ASSIGNMENT_PATH</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$repo_name</span><span class="s2">&quot;</span>/
 <span class="o">!</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="nv">$repo_name</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git add -A
-<span class="o">!</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="nv">$repo_name</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;Add assignment 01 results&quot;</span>
+<span class="o">!</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="nv">$repo_name</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git commit -m <span class="s2">&quot;Add assignment 02 results&quot;</span>
 <span class="o">!</span> <span class="nb">cd</span> <span class="s2">&quot;</span><span class="nv">$repo_name</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> git push -u origin master
 
 <span class="n">sub_info</span> <span class="o">=</span> <span class="p">{</span>
@@ -14455,7 +14585,8 @@ $$
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">submission_file_name</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#@title</span>
+<span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">submission_file_name</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14466,11 +14597,31 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1><ul>
-<li>Khosravi, Hossein, and Ehsanollah Kabir. “Introducing a Very Large Dataset of Handwritten Farsi Digits and a Study on Their Varieties.” Pattern Recogn. Lett. 28, no. 10 (July 2007): 1133–1141. <a href="https://doi.org/10.1016/j.patrec.2006.12.022">https://doi.org/10.1016/j.patrec.2006.12.022</a>.</li>
-<li>Stanford Course: Deep Learning for NLP (CS224n)</li>
-<li>Coursera Course: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</li>
+<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li></li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Special-Thanks">Special Thanks<a class="anchor-link" href="#Special-Thanks">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Special thanks for Amirhossein Kazemnejad and Kiamehr Razaee for creating template of the deep learning course assignments.</p>
 
 </div>
 </div>
