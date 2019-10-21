@@ -13096,12 +13096,12 @@ div#notebook {
 #     Put your implementation here     #
 ########################################</code></pre>
 </li>
-<li>We always recommend co-operation and discussion in groups for assignments. However, each student has to finish all the questions by him/herself. If our matching system identifies any sort of copying, you'll be responsible for consequences. So, please mention his/her name if you have a team-mate.</li>
+<li>We always recommend co-operation and discussion in groups for assignments. However, each student has to finish all the questions by himself/herself. If our matching system identifies any sort of copying, you'll be responsible for consequences. So, please mention his/her name if you have a team-mate.</li>
 <li>Students who audit this course should submit their assignments like other students to be qualified for attending the rest of the sessions.</li>
 <li>Finding any sort of copying will zero down that assignment grade and also will be counted as two negative assignment for your final score.</li>
 <li>When you are ready to submit, please follow the instructions at the end of this notebook.</li>
 <li>If you have any questions about this assignment, feel free to drop us a line. You may also post your questions on the course Forum page.</li>
-<li>You must run this notebook on Google Colab platform, it depends on Google Colab VM for some of its depencecies.</li>
+<li>You must run this notebook on Google Colab platform, it depends on Google Colab VM for some of its dependencies.</li>
 <li><strong>Before starting to work on the assignment Please fill your name in the next section <em>AND Remember to RUN the cell.</em> </strong></li>
 </ul>
 <p><br/></p>
@@ -13162,7 +13162,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In class we studied about MLP. In this part you have to implement your MLP and train and test it on Iris dataset.</p>
+<p>In class, we studied about MLP. In this part, you have to implement your own MLP and train and test it on the Iris dataset.</p>
 
 </div>
 </div>
@@ -13172,7 +13172,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Iris-dataset">Iris dataset<a class="anchor-link" href="#Iris-dataset">&#182;</a></h3><hr>
 <p>The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.</p>
-<p>The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.</p>
+<p>The data set consists of 50 samples from each of three species of Iris (Iris setosa, Iris virginica, and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimeters. Based on the combination of these four features, Fisher developed a linear discriminant model to distinguish the species from each other.</p>
 <p>You can see <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">this</a> link for more details.</p>
 
 </div>
@@ -13248,7 +13248,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, implement your MLP from zero.</p>
+<p>Now, implement your MLP from scratch.</p>
 
 </div>
 </div>
@@ -13284,7 +13284,7 @@ div#notebook {
 <span class="sd">      y: 1d or 2d numpy array or list of test data labels</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">      acc: In simplest way ratio between number of correct predicts with number </span>
+<span class="sd">      acc: In the simplest way ratio between the number of correct predicts with the number </span>
 <span class="sd">           of all train data</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -13351,15 +13351,15 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initilize_model</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initialize_model</span><span class="p">():</span>
   <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">  initilize a MLP model that classify Iris dataset</span>
 <span class="sd">  </span>
 <span class="sd">  Returns:</span>
 <span class="sd">    model: A MLP object</span>
 <span class="sd">               </span>
-<span class="sd">  Hint: Consider number of features in Iris dataset and number of its classes </span>
-<span class="sd">        and initilize weigts.</span>
+<span class="sd">  Hint: Consider the number of features in the Iris dataset and the number of its classes </span>
+<span class="sd">        and initialize weights.</span>
 <span class="sd">  &quot;&quot;&quot;</span>
   
   <span class="c1">########################################</span>
@@ -13409,7 +13409,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Test your implementation(dont change this cell):</p>
+<p>Test your implementation(don't  change this cell):</p>
 
 </div>
 </div>
@@ -13419,7 +13419,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlp</span> <span class="o">=</span> <span class="n">initilize_model</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlp</span> <span class="o">=</span> <span class="n">initialize_model</span><span class="p">()</span>
 <span class="n">train_data</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">,</span> <span class="n">test_data</span><span class="p">,</span> <span class="n">test_labels</span> <span class="o">=</span> <span class="n">split_train_test</span><span class="p">(</span><span class="n">iris</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">],</span> <span class="n">iris</span><span class="p">[</span><span class="s1">&#39;target&#39;</span><span class="p">])</span>
 <span class="n">mlp</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">)</span>
 <span class="n">mlp</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
@@ -13437,7 +13437,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In class we studied about mathematical for back-propagation when activation function of last layer is relu. Now write mathematical formulas for softmax activation function and get delta formulas for all layers.</p>
+<p>In class, we studied the mathematics behind the back-propagation when the activation function of the last layer is Relu. Now write equations related to the softmax activation function and obtain delta formulas for all layers.</p>
 
 </div>
 </div>
@@ -13453,17 +13453,6 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Notes">Notes<a class="anchor-link" href="#Notes">&#182;</a></h3><hr>
-<ul>
-<li></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="2.Text-classification">2.Text classification<a class="anchor-link" href="#2.Text-classification">&#182;</a></h1>
 </div>
 </div>
@@ -13471,7 +13460,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In class, we studied how to build a basic dense model. Now we want to learn how to prepare a text dataset in order to feed into a provided model. First, we start with a simple dataset and then, we try a harder example.</p>
+<p>In class, we studied how to build a basic dense model. Now we want to learn how to prepare a text dataset to feed into a provided model. First, we start with a simple dataset and then, we try a harder example.</p>
 
 </div>
 </div>
@@ -13537,7 +13526,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Encoding-the-text-data">Encoding the text data<a class="anchor-link" href="#Encoding-the-text-data">&#182;</a></h3><p>In order to feed the text data into a deep model, we must convert the strings to numerical data. A variety of approaches are available for this purpose, and we use two of them for this task: <strong>One-Hot</strong> and <strong>TF-IDF</strong> encodings</p>
+<h3 id="Encoding-the-text-data">Encoding the text data<a class="anchor-link" href="#Encoding-the-text-data">&#182;</a></h3><p>To feed the text data into a deep model, we must convert the strings to numerical data. A variety of approaches are available for this purpose, and we use two of them for this task: <strong>One-Hot</strong> and <strong>TF-IDF</strong> encodings</p>
 
 </div>
 </div>
@@ -13545,8 +13534,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="One-Hot-encoding">One-Hot encoding<a class="anchor-link" href="#One-Hot-encoding">&#182;</a></h3><p>one-hot is a group of bits among which the legal combinations of values are only those with a single high (1) bit and all the others low (0). So, in our case, we should convert each word to an array which only one cell in the whole array must be 1, the one which represents that specific word.
-Then, in order to represent a document as a vector, we should sum all the words' vectors in the document</p>
+<h3 id="One-Hot-encoding">One-Hot encoding<a class="anchor-link" href="#One-Hot-encoding">&#182;</a></h3><p>one-hot is a group of bits among which the legal combinations of values are only those with a single high (1) bit and all the others low (0). So, in our case, we should convert each word to an array in which only one cell in the whole array must be 1, the one which represents that specific word. Then, to represent a document as a vector, we should sum all the words' vectors in the document.</p>
 
 </div>
 </div>
@@ -13574,7 +13562,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As we studied in the TA class, for classification tasks we need to convert the labels into one-hot format.</p>
+<p>As we studied in the TA class, for classification tasks we need to convert the labels into the one-hot format.</p>
 
 </div>
 </div>
@@ -13723,7 +13711,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="TF-IDF-encoding">TF-IDF encoding<a class="anchor-link" href="#TF-IDF-encoding">&#182;</a></h3><p>TFIDF, short for term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus<a href="http://i.stanford.edu/~ullman/mmds/ch1.pdf">[1]</a>. TF-IDF considers both frequency of a word in the document and Inverse Document Frequency which determines whether a word is common in documents or not. You can learn more about this approach <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">here</a> in order to implement it. Note that you need to provide a vector for each document with the same shape as the One-Hot vector but with different values.</p>
+<h3 id="TF-IDF-encoding">TF-IDF encoding<a class="anchor-link" href="#TF-IDF-encoding">&#182;</a></h3><p>TFIDF, short for term frequency-inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus<a href="http://i.stanford.edu/~ullman/mmds/ch1.pdf">[1]</a>. TF-IDF considers both frequencies of a word in the document and Inverse Document Frequency which determines whether a word is common in documents or not. You can learn more about this approach <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">here</a> to implement it. Note that you need to provide a vector for each document with the same shape as the One-Hot vector but with different values.</p>
 
 </div>
 </div>
@@ -13751,7 +13739,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we train and visualize our model again. Note that the result may vary with respect to the preprocessing you do or the tokenizer you use to split your data.</p>
+<p>Now we train and visualize our model again. Note that the result may vary concerning the preprocessing you do or the tokenizer you use to split your data.</p>
 
 </div>
 </div>
@@ -13931,8 +13919,8 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Word-Embeddings">Word Embeddings<a class="anchor-link" href="#Word-Embeddings">&#182;</a></h3><p>In this section, we want to use a pre-trained word embedding in order to encode the reviews. To do so, we leverage the Google News Word2Vec model, a model that provides 300 semantic features for each word. These features are extracted with respect to the position of the training word and by considering adjacent words in the training data (Google News). More detailed information will be discussed in your class later.</p>
-<p>You can download the pre-trained model from <a href="https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz">here</a>, and you may want to use <a href="https://radimrehurek.com/gensim/">gensim</a> to load the file. Next, you need to replace the document vector with the average of word vectors that are available in W2V model. Use a weighted average in order to consider the frequency of a word as well as its presence.</p>
+<h3 id="Word-Embeddings">Word Embeddings<a class="anchor-link" href="#Word-Embeddings">&#182;</a></h3><p>In this section, we want to use a pre-trained word embedding to encode the reviews. To do so, we leverage the Google News Word2Vec model, a model that provides 300 semantic features for each word. These features are extracted concerning the position of the training word and by considering adjacent words in the training data (Google News). More detailed information will be discussed in your class later.</p>
+<p>You can download the pre-trained model from <a href="https://s3.amazonaws.com/dl4j-distribution/GoogleNews-vectors-negative300.bin.gz">here</a>, and you may want to use <a href="https://radimrehurek.com/gensim/">gensim</a> to load the file. Next, you need to replace the document vector with the average of word vectors that are available in the W2V model. Use a weighted average to consider the frequency of a word as well as its presence.</p>
 
 </div>
 </div>
@@ -14016,8 +14004,8 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In this part we want to classify images of forg from images of penguin.</p>
-<p>First we should download the datatset.</p>
+<p>In this part, We want to classify animal images according to their species (frog vs penguin).</p>
+<p>First, we should download the dataset.</p>
 
 </div>
 </div>
@@ -14043,7 +14031,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As you see two file have the url address of images so you should download and save them in correct folders. Do it in this cell:</p>
+<p>As you see, two files have the URL address of images, so you should download and save them in appropriate folders. Do it in this cell:</p>
 
 </div>
 </div>
@@ -14064,7 +14052,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>As a offer see some images of this dataset so change this code</p>
+<p>As a suggestion, it is better to view some of the images at first. To do so, modify this code:</p>
 
 </div>
 </div>
@@ -14144,8 +14132,8 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now we change images to numeric feature vectors to input them to network.</p>
-<p>We do this work with vgg16 model. It is a CNN. CNN will study in future.</p>
+<p>Now we change images to numeric feature vectors to feed them into the network.</p>
+<p>To do so, we leverage the vgg16 model. It is a CNN model; these models will be discussed in the future.</p>
 
 </div>
 </div>
@@ -14167,8 +14155,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>For prepare images for getting them to network some preprocessing is necessary. Do this in this cell.</p>
-<p>For example normalize images.</p>
+<p>To prepare images to feed them into the network, some preprocessing is required. Implement this in this cell. For example, you can normalize images.</p>
 
 </div>
 </div>
@@ -14203,7 +14190,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now first preprocess images then changing them to feature vectors.</p>
+<p>Now, you must first preprocess the images, then convert/encode them into feature vectors.</p>
 
 </div>
 </div>
@@ -14241,7 +14228,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>If you think changing format of labels make your work easier then you can do it in this cell and delete two last line.</p>
+<p>If you need to convert the labels into another format, you can do so by deleting the two last lines and implementing your code.</p>
 
 </div>
 </div>
@@ -14264,7 +14251,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now implement a MLP for this task to classify frog images from penguin images.</p>
+<p>Now implement an MLP model for this task to separate frog images from penguin images.</p>
 
 </div>
 </div>
@@ -14293,7 +14280,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, implement your MLP from zero.</p>
+<p>Now, implement your MLP from scratch.</p>
 
 </div>
 </div>
@@ -14329,7 +14316,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <span class="sd">      y: 1d or 2d numpy array or list of test data labels</span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">      acc: In simplest way ratio between number of correct predicts with number </span>
+<span class="sd">      acc: In the simplest way ratio between the number of correct predicts with the number </span>
 <span class="sd">           of all train data</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -14396,22 +14383,22 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initilize_model</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">initialize_model</span><span class="p">():</span>
   <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">  initilize a MLP model that classify Iris dataset</span>
 <span class="sd">  </span>
 <span class="sd">  Returns:</span>
 <span class="sd">    model: A MLP object</span>
 <span class="sd">               </span>
-<span class="sd">  Hint: Consider number of features in Iris dataset and number of its classes </span>
-<span class="sd">        and initilize weigts.</span>
+<span class="sd">  Hint: Consider the number of features in the Iris dataset and the number of its classes </span>
+<span class="sd">        and initialize weights.</span>
 <span class="sd">  &quot;&quot;&quot;</span>
   
   <span class="c1">########################################</span>
   <span class="c1">#     Put your implementation here     #</span>
   <span class="c1">########################################</span>
   
-    <span class="k">return</span> <span class="n">model</span>
+  <span class="k">return</span> <span class="n">model</span>
 </pre></div>
 
     </div>
@@ -14422,7 +14409,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Test your implementation(dont change this cell):</p>
+<p>Evaluate your model(don't change this cell):</p>
 
 </div>
 </div>
@@ -14432,7 +14419,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlp</span> <span class="o">=</span> <span class="n">initilize_model</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mlp</span> <span class="o">=</span> <span class="n">initialize_model</span><span class="p">()</span>
 <span class="n">mlp</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;your model accuracy on test data is: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">mlp</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">xs</span><span class="p">[</span><span class="s1">&#39;train&#39;</span><span class="p">],</span> <span class="n">ys</span><span class="p">[</span><span class="s1">&#39;test&#39;</span><span class="p">])))</span>
 <span class="n">mlp</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;topvgg16_model.h5&#39;</span><span class="p">)</span>
@@ -14468,7 +14455,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Note: </strong> We need your Github token to create (if doesn't exist previously) new repository to store learned model data. Also Google Drvie token enable us to download current notebook &amp; create submission. If you are intrested feel free to check our code.</p>
+<p><strong>Note: </strong> We need your Github token to create (if doesn't exist previously) new repository to store learned model data. Also Google Drive token enables us to download the current notebook &amp; create a submission. If you are interested feel free to check our code.</p>
 
 </div>
 </div>
@@ -14597,23 +14584,6 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="References">References<a class="anchor-link" href="#References">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li></li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Special-Thanks">Special Thanks<a class="anchor-link" href="#Special-Thanks">&#182;</a></h1>
 </div>
 </div>
@@ -14621,7 +14591,7 @@ Then, in order to represent a document as a vector, we should sum all the words'
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Special thanks for Amirhossein Kazemnejad and Kiamehr Razaee for creating template of the deep learning course assignments.</p>
+<p>Special thanks to Amirhossein Kazemnejad and Kiamehr Razaee for creating the template of deep learning course assignments.</p>
 
 </div>
 </div>
