@@ -13089,7 +13089,7 @@ div#notebook {
 <p><strong>Please pay attention to these notes:</strong></p>
 <p><br/></p>
 <ul>
-<li><strong>Assignment Due: </strong> 1398/08/22 23:59</li>
+<li><strong>Assignment Due: </strong> 1398/08/18 23:59</li>
 <li>If you need any additional information, please review the assignment page on the course website.</li>
 <li>The items you need to answer are highlighted in red and the coding parts you need to implement are denoted by:
 <pre><code>########################################
@@ -13258,7 +13258,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MLP</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MLP</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
   
   <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -13424,7 +13424,7 @@ div#notebook {
 <span class="n">mlp</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="n">train_labels</span><span class="p">)</span>
 <span class="n">mlp</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
 <span class="k">del</span> <span class="n">mlp</span>
-<span class="n">new_mlp</span> <span class="o">=</span> <span class="n">initilize_model</span><span class="p">()</span>
+<span class="n">new_mlp</span> <span class="o">=</span> <span class="n">initialize_model</span><span class="p">()</span>
 <span class="n">new_mlp</span><span class="o">.</span><span class="n">load_model</span><span class="p">(</span><span class="n">ASSIGNMENT_PATH</span> <span class="o">/</span> <span class="s1">&#39;my_model.h5&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;your model accuracy on test data is: </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">new_mlp</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="n">test_data</span><span class="p">,</span> <span class="n">test_labels</span><span class="p">)))</span>
 </pre></div>
@@ -14290,7 +14290,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[0]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MLP</span><span class="p">(</span><span class="n">Object</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MLP</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
   
   <span class="k">def</span> <span class="nf">train</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -14495,7 +14495,7 @@ div#notebook {
 <span class="s1">});</span>
 <span class="s1">&#39;&#39;&#39;</span>
 <span class="n">repo_name</span> <span class="o">=</span> <span class="s1">&#39;iust-deep-learning-assignments&#39;</span>
-<span class="n">submission_file_name</span> <span class="o">=</span> <span class="s1">&#39;dl_asg02__</span><span class="si">%s</span><span class="s1">__</span><span class="si">%s</span><span class="s1">.zip&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">student_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span>  <span class="s1">&#39;_&#39;</span><span class="p">))</span>
+<span class="n">submission_file_name</span> <span class="o">=</span> <span class="s1">&#39;dl_asg01__</span><span class="si">%s</span><span class="s1">__</span><span class="si">%s</span><span class="s1">.zip&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">student_id</span><span class="p">,</span> <span class="n">student_name</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span>  <span class="s1">&#39;_&#39;</span><span class="p">))</span>
 
 <span class="o">!</span> tar xf hub-linux-amd64-2.10.0.tgz
 <span class="o">!</span> <span class="nb">cd</span> hub-linux-amd64-2.10.0/ <span class="o">&amp;&amp;</span> chmod a+x install <span class="o">&amp;&amp;</span> ./install
@@ -14580,6 +14580,14 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If that cell makes an error when running you can download file dl_asg01<strong>your_struden_id</strong>your_name.zip from left panel and files section by right-clicking on it and choosing download button.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
