@@ -1,5 +1,4 @@
-I"!
-<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
+I"z<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
 
 <ul id="archive">
 
@@ -89,6 +88,49 @@
         <strong>
         <div>
     
+    
+</div>
+        </strong>
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/981/static_files/thumbnails/prac04.jpg');">
+        <img src="/981/static_files/thumbnails/prac04.jpg" />
+      </div>
+    </div>
+    
+    <div class="content">
+        <span><a href="#">Visualisation</a></span><br />
+
+        <strong>tl;dr:</strong> How to visualize layers and filters?
+        <br />
+        <strong>
+        <div>
+    
+	
+    [<a href="
+    
+      https://towardsdatascience.com/how-to-visualize-convolutional-features-in-40-lines-of-code-70b7d87b0030 
+    ">How to visualize convolutional features</a>]
+	
+    
+    
+	
+    [<a href="
+    
+      https://colab.research.google.com/drive/1jNZduDcpwzMDiJhEFgi9SXOl0H18wlRU 
+    ">colab file - visualisation filters</a>]
+	
+    [<a href="
+    
+      https://colab.research.google.com/drive/1KcuedaFFXfC2P_22o0kfzr2RXHqtp36v 
+    ">colab file - visualisation heatmap</a>]
+	
     
 </div>
         </strong>
