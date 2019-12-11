@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title> Assignment #1 - MLP and preprocessing - Deep Learning / Fall 1398 (2019) </title>
-  <meta name="description" content="We are going to learn more about the mathematics behind neural networks, practicing the implementation using low-level APIs, and improving an overfitted MLP....">
+  <title> Project Guidelines - Deep Learning / Fall 1398 (2019) </title>
+  <meta name="description" content="Instructor: Mohammad Taher Pilehvar
+">
   
   <link rel="stylesheet" href="/981/_css/main.css">
-  <link rel="canonical" href="https://iust-deep-learning.github.io//981/assignments/01_mlp_and_preprocessing">
+  <link rel="canonical" href="https://iust-deep-learning.github.io//981/final_project/guidelines/">
   <link rel="alternate" type="application/rss+xml" title="Iran University of Science and Technology (IUST)" href="https://iust-deep-learning.github.io//981/feed.xml" />
 <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
@@ -187,66 +188,54 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="post">
+        <div class="post" style="margin-right: auto;max-width: 650px;margin-left: auto;">
 
   <header class="post-header">
-    <h1 class="post-title">Assignment #1 - MLP and preprocessing</h1>
-    <p class="post-meta">Released on Thursday 2019-10-24 19:00:00 +0330</p>
+    <h1 class="post-title">Project Guidelines</h1>
   </header>
 
-  <div>
-    
-    <span style="font-weight: bold">Due Date: 2019-11-09 23:59:00 +0330 23:59</span>
-    
-    <p style="font-weight: bold">Download
-      
-      [<a href="/981/static_files/assignments/assignment_01.ipynb">problems</a>]
-      
-      
-      [<a href="/981/static_files/assignments/assignment_01_preview.html">show preview</a>]
-      
-      
-      
-    </p>
-
-    <div style="color: gray;">
-      <h3>Late Policy</h3>
-      <ul>
-    
-    <li>You have free 8 late days.</li>
-    
-    <li>You can use late days for assignments. A late day extends the deadline 24 hours.</li>
-    
-    <li>Once you have used all 8 late days, the penalty is 10% for each additional late day.</li>
-    
-</ul>
-    </div>
-  </div>
-
-  <br />
   <article class="post-content">
-    <p>We are going to learn more about the mathematics behind neural networks, practicing the implementation using low-level APIs, and improving an overfitted MLP.</p>
-
-<h1 id="notes">Notes</h1>
+    <div style="color: gray">
+<h4>Updates</h4>
 <ul>
-  <li>Students who audit this course should submit their assignments to be qualified for attending the rest of the sessions.</li>
-  <li>Finding any sort of copying will zero down that assignment grade and also will be counted as two negative assignment points for your final score.</li>
+  <li>1398/9/20: First release.</li>
 </ul>
+<br />
+</div>
 
-<h1 id="setup">Setup</h1>
+<p>The course project is one of those great opportunities in which you can apply your newly learned skills towards real-life problems. It offers you the chance to build a Deep Learning pipeline, tune and debug a machine learning model, and experiment with one of the world’s most successful Computer Science approaches. It is also responsible for a significant portion of your final grade.</p>
+
+<p>We strongly suggest you do the project in a team.  A team can have a maximum of <strong>two members</strong> and remember we will review each member’s contribution individually. For the project topic, you can either define the project based on our default topics or implement a new/customized task/dataset (by crawling an Iranian website or defining a new interesting task). You can also pick any of the tasks from SemEval-2020. You must build a system from scratch, to cope with all the difficulties of data preparation, preprocessing and parameter settings.</p>
+
+<p>Additionally, we have to make sure your idea is feasible and also in the scope of the course. Thus before starting to work on your project, the proposal should be approved by us.</p>
+
+<p>This document will guide you through milestones as well as their evaluation policy. Please read them carefully and reach us if you have any question.</p>
+
+<h1 id="proposal">Proposal</h1>
+
+<p>No matter how you came with the project idea (whether it’s one of the pre-defined topics or not), we need you to complete the proposal. It shows how well you have understood the problem and how well you have explored the problem space. We’ll review the proposal and inform you whether we think the scope of the project is too narrow or too wide.</p>
+
 <ol>
-  <li>Click on <strong>Download [problems]</strong> to obtain the assignment jupyter notebook.</li>
-  <li>Go to <a href="https://colab.research.google.com">https://colab.research.google.com/</a>.</li>
-  <li>Switch to Upload tab, choose <code>assignment_01.ipynb</code> and click upload.</li>
-  <li>Now You’re ready to go.</li>
+  <li><strong>Title:</strong> A statement to briefly explain the problem/task and a solution you’re going to propose. Example: “Grammatical error corrections using an augmented sequence to sequence model”.</li>
+  <li><strong>Problem</strong> <strong>d</strong><strong>efinition:</strong> Describe what problem you are going to solve. What goal(s) you’re trying to achieve.  Why do you think it is important/challenging? Explain the inputs and outputs of your system in detail. Give us an example if applicable.</li>
+  <li><strong>Dataset:</strong> A high-quality dataset is a critical prerequisite for deep learning. Please specify the dataset you will use, also include its size and license (if you want to evaluate your model on several datasets, go ahead and list all of them). If you need any preprocessing step, please describe it. Sometimes it is necessary to collect data yourself. Explain how you are going to do that and how you plan to label the collected data (if applicable).</li>
+  <li><strong>Evaluation</strong> <strong>m</strong><strong>etric:</strong> This is a measurement of how well your model performed its desired task. It should be a well-defined, numerical, comparable, automatic evaluation metric (for example: F1-measure or BLEU score).</li>
+  <li><strong>Baseline</strong> <strong>m</strong><strong>ethod:</strong> Describe a baseline method for solving this problem. Make it clear that you will implement it yourself, or will use a previously published score. Baseline is a trivial approach. The first idea that can be thought. You suggest an algorithm that should be better than the baseline at least. For example feeding a word with its neighbors is a baseline to name entity recognition task.</li>
 </ol>
 
-<h1 id="submission">Submission</h1>
-<p>Follow notebook instructions to submit your assignment!</p>
+<p>Your submission is first examined in terms of an accurate description of the required fields. It will also be judged on creativity in defining the problem and the quality of your write-up.</p>
+
+<p><em>We will post pre-defined topics on our Google Group page.</em></p>
+
+<p><strong># Deliverables:</strong></p>
+<ul>
+  <li>You need to submit the propsoal in pdf format here: <a href="https://forms.gle/zCxFRMZSBZXsf8sS7">https://forms.gle/zCxFRMZSBZXsf8sS7</a></li>
+</ul>
 
   </article>
 
 </div>
+
       </div>
     </div>
 
