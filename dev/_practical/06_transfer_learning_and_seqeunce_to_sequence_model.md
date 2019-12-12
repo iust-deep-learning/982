@@ -1,7 +1,7 @@
 ---
 type: practical
 date: 2019-12-12T8:00:00+4:30
-title: Transfer Learning and Sequence to Sequnce Model
+title: Transfer Learning and Sequence to Sequence Model
 notes:  
 - link: https://ruder.io/transfer-learning/
   name: Transfer learning
