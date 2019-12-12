@@ -1,4 +1,4 @@
-I"©<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
+I"ž<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
 
 <ul id="archive">
 
@@ -177,6 +177,54 @@
     ">Image Augmentation with Keras - 2</a>]
 	
     
+    
+</div>
+        </strong>
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/981/static_files/thumbnails/prac06.jpg');">
+        <img src="/981/static_files/thumbnails/prac06.jpg" />
+      </div>
+    </div>
+    
+    <div class="content">
+        <span><a href="#">Transfer Learning and Sequence to Sequnce Model</a></span><br />
+
+        <strong>tl;dr:</strong> What is Transfer learning? How to use a pretrain model in Keras? What is Sequence to Sequence models and how to implement a machine translation model?
+        <br />
+        <strong>
+        <div>
+    
+	
+    [<a href="
+    
+      https://ruder.io/transfer-learning/ 
+    ">Transfer learning</a>]
+	
+    [<a href="
+    
+      https://arxiv.org/pdf/1901.11504.pdf 
+    ">Multi-Task Deep Neural Networks for Natural Language Understanding</a>]
+	
+    [<a href="
+    
+      https://www.kaggle.com/dansbecker/transfer-learning 
+    ">Kaggle Transfer learning</a>]
+	
+    
+    
+	
+    [<a href="
+    
+      https://colab.research.google.com/drive/1LS0jeq6glTKoY7zRyQBvbBHmH-jKowZO 
+    ">colab file - Seq2Seq</a>]
+	
     
 </div>
         </strong>
