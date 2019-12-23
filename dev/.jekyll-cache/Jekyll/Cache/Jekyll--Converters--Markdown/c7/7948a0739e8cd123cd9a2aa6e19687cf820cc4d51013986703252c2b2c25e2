@@ -1,4 +1,4 @@
-I"Ÿ<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
+I" <p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
 
 <ul id="archive">
 
@@ -224,6 +224,37 @@
     
       https://colab.research.google.com/drive/1LS0jeq6glTKoY7zRyQBvbBHmH-jKowZO 
     ">colab file - Seq2Seq</a>]
+	
+    
+</div>
+        </strong>
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/981/static_files/thumbnails/prac07.png');">
+        <img src="/981/static_files/thumbnails/prac07.png" />
+      </div>
+    </div>
+    
+    <div class="content">
+        <span><a href="#">Tensorflow2</a></span><br />
+
+        <strong>tl;dr:</strong> Tensorflow2 tutorial
+        <br />
+        <strong>
+        <div>
+    
+    
+	
+    [<a href="
+    
+      https://colab.research.google.com/github/iust-deep-learning/981/blob/master/tensorflow-2-tutorial/part_01.ipynb 
+    ">colab file</a>]
 	
     
 </div>
