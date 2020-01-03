@@ -1,4 +1,4 @@
-I" <p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
+I"[<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
 
 <ul id="archive">
 
@@ -249,12 +249,29 @@
         <strong>
         <div>
     
+	
+    [<a href="
+    
+      https://github.com/iust-deep-learning/tensorflow-2-tutorial/raw/master/part_02_slides.pdf 
+    ">slide part 02</a>]
+	
+    [<a href="
+    
+      https://github.com/iust-deep-learning/tensorflow-2-tutorial/raw/master/part_03_slides.pdf 
+    ">slide part 03</a>]
+	
+    [<a href="
+    
+      https://github.com/iust-deep-learning/tensorflow-2-tutorial/raw/master/part_04_slides.pdf 
+    ">slide part 04</a>]
+	
+    
     
 	
     [<a href="
     
-      https://colab.research.google.com/github/iust-deep-learning/981/blob/master/tensorflow-2-tutorial/part_01.ipynb 
-    ">colab file</a>]
+      https://colab.research.google.com/github/iust-deep-learning/tensorflow-2-tutorial/blob/master/part_01.ipynb 
+    ">colab file part 01</a>]
 	
     
 </div>
