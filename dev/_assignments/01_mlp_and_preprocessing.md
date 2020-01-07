@@ -5,6 +5,7 @@ due: 2019-11-9T23:59:00+3:30
 title: 'Assignment #1 - MLP and preprocessing'
 pdf: /static_files/assignments/assignment_01.ipynb
 preview: /static_files/assignments/assignment_01_preview.html
+solutions: /static_files/assignments/assignment_01_solutions.html
 ---
 We are going to learn more about the mathematics behind neural networks, practicing the implementation using low-level APIs, and improving an overfitted MLP.
 

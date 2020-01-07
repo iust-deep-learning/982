@@ -5,6 +5,7 @@ due: 2019-12-14T23:59:00+3:30
 title: 'Assignment #2 - Image task and Visualization'
 pdf: /static_files/assignments/assignment_02.ipynb
 preview: /static_files/assignments/assignment_02_preview.html
+solutions: /static_files/assignments/assignment_02_solutions.html
 ---
 We are going to build an image classification model and visualize it.
 
