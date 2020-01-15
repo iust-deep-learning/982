@@ -5,6 +5,7 @@ due: 2020-1-1T23:59:00+3:30
 title: 'Assignment #3 - Transfer Learning and Sequence to Sequence models'
 pdf: /static_files/assignments/assignment_03.ipynb
 preview: /static_files/assignments/assignment_03_preview.html
+solutions: /static_files/assignments/assignment_03_solutions.html
 ---
 We are going to build an image classification model and visualize it.
 
