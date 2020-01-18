@@ -1,4 +1,4 @@
-I"[<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
+I"_<p>You can download the materials of practical classes here . I will try to upload materials prior to their corresponding classes.</p>
 
 <ul id="archive">
 
@@ -242,9 +242,9 @@
     </div>
     
     <div class="content">
-        <span><a href="#">Tensorflow2</a></span><br />
+        <span><a href="#">TensorFlow 2 Tutorial</a></span><br />
 
-        <strong>tl;dr:</strong> Tensorflow2 tutorial
+        <strong>tl;dr:</strong> A set of tutorials, prepared by IUST, on TensorFlow 2 (basically a mini-course): It covers most of the required materials to start coding in TensorFlow, such as defining the computation, designing the model, working the input pipeline, and many more.
         <br />
         <strong>
         <div>
@@ -252,27 +252,10 @@
 	
     [<a href="
     
-      https://github.com/iust-deep-learning/tensorflow-2-tutorial/raw/master/part_02_slides.pdf 
-    ">slide part 02</a>]
-	
-    [<a href="
-    
-      https://github.com/iust-deep-learning/tensorflow-2-tutorial/raw/master/part_03_slides.pdf 
-    ">slide part 03</a>]
-	
-    [<a href="
-    
-      https://github.com/iust-deep-learning/tensorflow-2-tutorial/raw/master/part_04_slides.pdf 
-    ">slide part 04</a>]
+      https://github.com/iust-deep-learning/tensorflow-2-tutorial 
+    ">official page</a>]
 	
     
-    
-	
-    [<a href="
-    
-      https://colab.research.google.com/github/iust-deep-learning/tensorflow-2-tutorial/blob/master/part_01.ipynb 
-    ">colab file part 01</a>]
-	
     
 </div>
         </strong>
