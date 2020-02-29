@@ -13233,7 +13233,7 @@ $$w^{n\times p} , b^{1\times p}$$
 <span class="sd">    </span>
 <span class="sd">  Returns:</span>
 <span class="sd">    relu_out: A numpy array of the same shape as x. </span>
-<span class="sd">      Basically relu function or its derivative applied to every element x</span>
+<span class="sd">      Basically relu function or its derivative applied to every element of x</span>
 <span class="sd">               </span>
 <span class="sd">  &quot;&quot;&quot;</span>
 
@@ -13253,7 +13253,7 @@ $$w^{n\times p} , b^{1\times p}$$
 <span class="sd">    </span>
 <span class="sd">  Returns:</span>
 <span class="sd">    sig_out: A numpy array of the same shape as x. </span>
-<span class="sd">      Basically sigmoid function or its derivative applied to every element x</span>
+<span class="sd">      Basically sigmoid function or its derivative applied to every element of x</span>
 <span class="sd">               </span>
 <span class="sd">  &quot;&quot;&quot;</span>
 
@@ -13281,9 +13281,9 @@ $$w^{n\times p} , b^{1\times p}$$
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test your implementation</span>
 <span class="o">!</span>wget -q https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg01_assets/act_test.npy
 
-<span class="n">x</span><span class="p">,</span> <span class="n">relu_out</span><span class="p">,</span> <span class="n">sig_out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;act_test.npy&#39;</span><span class="p">,</span> <span class="n">allow_pickle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span> <span class="n">relu_out</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">relu</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">relu_out</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">relu</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
-<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">sig_out</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">sig_out</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
+<span class="n">x_act</span><span class="p">,</span> <span class="n">relu_out</span><span class="p">,</span> <span class="n">sig_out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s1">&#39;act_test.npy&#39;</span><span class="p">,</span> <span class="n">allow_pickle</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span> <span class="n">relu_out</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">relu</span><span class="p">(</span><span class="n">x_act</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">relu_out</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">relu</span><span class="p">(</span><span class="n">x_act</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">sig_out</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">x_act</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">sig_out</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sigmoid</span><span class="p">(</span><span class="n">x_act</span><span class="p">,</span> <span class="n">deriv</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">atol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13321,8 +13321,8 @@ $$w^{n\times p} , b^{1\times p}$$
 <br> -  <strong>parameters</strong>: A list of dictionaries in the form of <em>{'w': weight, 'b': bias}</em> where <em>weight</em> and <em>bias</em> are weight matrix and bias vector of a layer.
 <br>- <strong>act_funcs</strong>: A list of activation functions used in the corresponding layer.
 <br>- <strong>activations</strong>: A list of matrices each corresponding to the output of each layer.
-<br>- <strong>layer_ins</strong>: A list of matrices each corresponding to the input of each layer.
-<br> Note that we store inputs and outputs of the layers because we'll need them later for implementing the back-propagation algorithm.</p>
+<br>- <strong>weighted_ins</strong>: A list of matrices each corresponding to the weighted input of each layer. Weighted input, as the name suggests, is layer's input multiplied by layer's weights and added to layer's bias. Which then goes into the layer's activation function to compute the layer's activations(outputs)!
+<br> Note that we store weighted inputs and outputs of the layers because we'll need them later for implementing the back-propagation algorithm.</p>
 
 </div>
 </div>
@@ -13353,7 +13353,7 @@ $$w^{n\times p} , b^{1\times p}$$
     <span class="bp">self</span><span class="o">.</span><span class="n">parameters</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">act_funcs</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">activations</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">layer_ins</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">weighted_ins</span> <span class="o">=</span> <span class="p">[]</span>
 
   <span class="k">def</span> <span class="nf">add_layer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layer_size</span><span class="p">,</span> <span class="n">act_func</span><span class="o">=</span><span class="n">linear</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -13388,16 +13388,16 @@ $$w^{n\times p} , b^{1\times p}$$
 <span class="sd">  Returns:</span>
 <span class="sd">    mlp_out: A numpy array of shape (b, out_dim) where b is the batch size and out_dim is the dimension of the output</span>
 
-<span class="sd">    Hint: Don&#39;t forget to store inputs and outputs of each layer in self.layer_ins and self.activations respectively</span>
+<span class="sd">    Hint: Don&#39;t forget to store weighted inputs and outputs of each layer in self.weighted_ins and self.activations respectively</span>
 <span class="sd">               </span>
 <span class="sd">  &quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">activations</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">layer_ins</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">weighted_ins</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="n">mlp_out</span> <span class="o">=</span> <span class="n">X</span>
     <span class="c1">########################################</span>
     <span class="c1">#     Put your implementation here     #</span>
     <span class="c1">######################################## </span>
-
+    
     
 
     <span class="k">return</span> <span class="n">mlp_out</span>
@@ -13423,8 +13423,8 @@ $$w^{n\times p} , b^{1\times p}$$
 <span class="n">mlp</span><span class="o">.</span><span class="n">add_layer</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">relu</span><span class="p">)</span>
 <span class="n">out</span> <span class="o">=</span> <span class="n">mlp</span><span class="o">.</span><span class="n">feed_forward</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">mlp</span><span class="o">.</span><span class="n">parameters</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span>
-<span class="k">assert</span> <span class="n">mlp</span><span class="o">.</span><span class="n">activations</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">64</span><span class="p">])</span> <span class="ow">and</span> <span class="n">mlp</span><span class="o">.</span><span class="n">layer_ins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">64</span><span class="p">])</span>
-<span class="k">assert</span> <span class="n">mlp</span><span class="o">.</span><span class="n">activations</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">32</span><span class="p">])</span> <span class="ow">and</span> <span class="n">mlp</span><span class="o">.</span><span class="n">layer_ins</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">32</span><span class="p">])</span>
+<span class="k">assert</span> <span class="n">mlp</span><span class="o">.</span><span class="n">activations</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">64</span><span class="p">])</span> <span class="ow">and</span> <span class="n">mlp</span><span class="o">.</span><span class="n">weighted_ins</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">64</span><span class="p">])</span>
+<span class="k">assert</span> <span class="n">mlp</span><span class="o">.</span><span class="n">activations</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">32</span><span class="p">])</span> <span class="ow">and</span> <span class="n">mlp</span><span class="o">.</span><span class="n">weighted_ins</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">32</span><span class="p">])</span>
 <span class="k">assert</span> <span class="n">out</span><span class="o">.</span><span class="n">shape</span> <span class="o">==</span> <span class="nb">tuple</span><span class="p">([</span><span class="mi">512</span><span class="p">,</span> <span class="mi">32</span><span class="p">])</span>
 <span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">mlp</span><span class="o">.</span><span class="n">activations</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">out</span><span class="p">)</span>
 
@@ -13649,7 +13649,7 @@ $$ Softmax(\hat{y}) - y$$<p>for a single sample. Here $\hat{y}$ is the MLP's out
 <li>calculate gradient of the loss with respect to $\hat{y}$
 <br> $g \longleftarrow \nabla_\hat{y} Loss$ </li>
 <li>for each layer $L$ starting from the ouput layer: <br>
-&emsp;&emsp; $g \longleftarrow g \odot f^\prime(input^{(L)})$ &emsp; ($input^{(L)}$ is the input of $L$th layer and $f$ is the activation function)<br>
+&emsp;&emsp; $g \longleftarrow g \odot f^\prime(weightedInput^{(L)})$ &emsp; ($weightedInput^{(L)}$ is the weighted input of $L$th layer and $f$ is the activation function)<br>
 &emsp;&emsp; $\nabla_{b^{(L)}}Loss \longleftarrow \sum_i^{batch} {g_i}$ <br>
 &emsp;&emsp; $\nabla_{w^{(L)}}Loss \longleftarrow output^{(L-1)T}g$ &emsp; ($output^{(L-1)}$ is the output of $(L-1)$th layer ) <br>
 &emsp;&emsp; $g \longleftarrow gw^{(L)T}$</li>
@@ -13677,8 +13677,8 @@ $$ Softmax(\hat{y}) - y$$<p>for a single sample. Here $\hat{y}$ is the MLP's out
 <span class="sd">    Compute the gradient of loss with respect to mlp&#39;s weights and biases</span>
 <span class="sd">  Args:</span>
 <span class="sd">    mlp: An object of MLP class</span>
-<span class="sd">    loss_function: A function used as loss function of the mlp</span>
-<span class="sd">    x: A numpy array of shape (batch_size, input_dim). The mlp&#39;s input</span>
+<span class="sd">    loss_function: A function used as loss function of the MLP</span>
+<span class="sd">    x: A numpy array of shape (batch_size, input_dim). The MLP&#39;s input</span>
 <span class="sd">    y: A numpy array of shape (batch_size, num_classes). Target labels</span>
 <span class="sd">    </span>
 <span class="sd">  Returns:</span>
@@ -13697,7 +13697,7 @@ $$ Softmax(\hat{y}) - y$$<p>for a single sample. Here $\hat{y}$ is the MLP's out
   <span class="c1">### compute gradient of the loss with respect to network output</span>
   <span class="n">g</span> <span class="o">=</span> <span class="n">loss_function</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">,</span> <span class="n">return_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-  <span class="c1">### You&#39;ll need the input in the last step of backprop so let&#39;s make a new list with x in the beggining</span>
+  <span class="c1">### You&#39;ll need the input in the last step of backprop so let&#39;s make a new list with x in the beginning</span>
   <span class="n">activations</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">mlp</span><span class="o">.</span><span class="n">activations</span> 
   
   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">num_layers</span><span class="p">)):</span>
