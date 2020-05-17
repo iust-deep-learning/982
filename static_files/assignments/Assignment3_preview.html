@@ -13780,7 +13780,7 @@ Then make the image matrix : 3x96x96</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="PCA">PCA<a class="anchor-link" href="#PCA">&#182;</a></h2><p>Principal components analysis is essentially just a coordinate transformation. The original data are plotted on an X-axis and a Y-axis. For two-dimensional data, PCA seeks to rotate these two axes so that the new axis X’ lies along the direction of maximum variation in the data. PCA requires that the axes be perpendicular, so in two dimensions the choice of X’ will determine Y’. You obtain the transformed data by reading the x and y values off this new set of axes, X’ and Y’. For more than two dimensions, the first axis is in the direction of most variation; the second, in direction of the next-most variation; and so on.</p>
-<p align="center"><img src="https://miro.medium.com/max/462/1*QALwLkPJG45E7_DsOccdaw.png" />   
+<p align="center"><img src="https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg03_assets/1_QA.png" />   
 </p>
 </div>
 </div>
@@ -13904,15 +13904,15 @@ Then make the image matrix : 3x96x96</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labeled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. In two dimentional space this hyperplane is a line dividing a plane in two parts where in each class lay in either side.</p>
 <p>Suppose you are given plot of two label classes on graph as shown in image (A). Can you decide a separating line for the classes?</p>
-<p align="center"><img src="https://miro.medium.com/max/600/1*BpeH5_M58kJ5xXfwzxI8yA.png"/> <center><figcaption>(A)</figcaption>  </center>  
+<p align="center"><img src="https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg03_assets/1_Bp.png"/> <center><figcaption>(A)</figcaption>  </center>  
 </p><p>You might have come up with something similar to following image (image B). It fairly separates the two classes. Any point that is left of line falls into black circle class and on right falls into blue square class. Separation of classes, that’s what SVM does. It finds out a line/ hyper-plane (in multidimensional space that separate outs classes).</p>
-<p align="center"><img src="https://miro.medium.com/max/600/1*Sg6wjASoZHPphF10tcPZGg.png" /> <center><figcaption>(B)</figcaption>  </center>
+<p align="center"><img src="https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg03_assets/1_Sg.png" /> <center><figcaption>(B)</figcaption>  </center>
 </p><h2 id="Making-it-a-Bit-complex&#8230;">Making it a Bit complex&#8230;<a class="anchor-link" href="#Making-it-a-Bit-complex&#8230;">&#182;</a></h2><p>So far so good. Now consider what if we had data as shown in image below? Clearly, there is no line that can separate the two classes in this x-y plane. So what do we do?</p>
 <p>We apply transformation and add one more dimension as we call it z-axis. Lets assume value of points on z plane, <em>w = x² + y²</em>. In this case we can manipulate it as distance of point from z-origin. Now if we plot in z-axis, a clear separation is visible and a line can be drawn.</p>
-<p align="right"><img src="https://miro.medium.com/max/600/1*C3j5m3E3KviEApHKleILZQ.png" />   
-</p><p align="center">Can you draw a separating line in this plane?</p><p align="right"><img src="https://miro.medium.com/max/600/1*FLolUnVUjqV0EGm3CYBPLw.png" />   
+<p align="right"><img src="https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg03_assets/1_C3.png" />   
+</p><p align="center">Can you draw a separating line in this plane?</p><p align="right"><img src="https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg03_assets/1_FL.png" />   
 </p><p align="center">plot of z-y axis. A separation can be made here.</p><p>When we transform back this line to original plane, it maps to circular boundary as shown in the following image. These transformations are called kernels.</p>
-<p align="right"><img src="https://miro.medium.com/max/600/1*NN5VCpVg9gPCLYrDl0YFYw.png" />  </p><p align = "center">Transforming back to x-y plane, a line transforms to circle.</p>
+<p align="right"><img src="https://github.com/iust-deep-learning/982/raw/master/static_files/assignments/asg03_assets/1_NN.png" />  </p><p align = "center">Transforming back to x-y plane, a line transforms to circle.</p>
 </div>
 </div>
 </div>
